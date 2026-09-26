@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-title-tr="{{ page.title_tr | default: page.title | default: site.title | escape }}" data-title-en="{{ page.title_en | default: page.title | default: site.title | escape }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title_en | default: page.title | default: site.title | escape }}</title>
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
+<meta name="theme-color" content="#2A1C13">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/icon-180.png' | relative_url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ page.title_en | default: page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<meta property="og:image" content="{{ '/assets/img/og-kai.jpg' | absolute_url }}">
+<link rel="preload" href="{{ '/assets/fonts/LuckiestGuy-Regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script>
+/* Dil: kayitli secim > tarayici dili (tr* ise TR) > EN. localStorage kapaliysa sessizce gecer. */
+(function(){var d=document.documentElement,l=null;try{l=localStorage.getItem('kg-lang')}catch(e){}
+if(l!=='tr'&&l!=='en'){var n=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase();l=n.indexOf('tr')===0?'tr':'en'}
+d.lang=l;document.title=d.getAttribute('data-title-'+l);})();
+</script>
+</head>
+<body class="{{ page.body_class | default: 'page' }}">
+<a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+<header class="topbar">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/img/icon-180.png' | relative_url }}" width="40" height="40" alt="">
+    <span>KeremikoGames</span>
+  </a>
+  {% if page.lang_toggle %}
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+  </div>
+  {% endif %}
+</header>
+<main id="main">
+{%- if page.name contains ".md" %}
+{%- comment %} Markdown sayfalar (gizlilik) metne dokunulmadan bu kabukla giydirilir. {% endcomment %}
+{%- if content contains 'id="en"' %}
+<p class="jump"><a href="#en">English version ↓</a></p>
+{%- endif %}
+<article class="prose">
+{{ content }}
+</article>
+{%- else %}
+{{ content }}
+{%- endif %}
+</main>
+<footer class="foot">
+  <p>
+    <a href="{{ '/privacy/' | relative_url }}"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span></a>
+    <span aria-hidden="true">·</span>
+    <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+  </p>
+  <p>© {{ site.time | date: '%Y' }} KeremikoGames</p>
+  <p class="credits"><span lang="tr">Yazı tipleri:</span><span lang="en">Fonts:</span>
+    Luckiest Guy — <a href="{{ '/assets/fonts/LuckiestGuy-LICENSE.txt' | relative_url }}">Apache 2.0</a> ·
+    Nunito — <a href="{{ '/assets/fonts/Nunito-OFL.txt' | relative_url }}">SIL OFL 1.1</a></p>
+</footer>
+{% if page.lang_toggle %}
+<script>
+(function(){var d=document.documentElement,b=document.querySelectorAll('[data-set-lang]');
+function sync(){for(var i=0;i<b.length;i++){b[i].setAttribute('aria-pressed',b[i].getAttribute('data-set-lang')===d.lang?'true':'false')}}
+for(var i=0;i<b.length;i++){b[i].addEventListener('click',function(){var l=this.getAttribute('data-set-lang');d.lang=l;document.title=d.getAttribute('data-title-'+l);try{localStorage.setItem('kg-lang',l)}catch(e){}sync()})}
+sync();})();
+</script>
+{% endif %}
+</body>
+</html>

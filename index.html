@@ -1,0 +1,77 @@
+---
+layout: default
+title: KeremikoGames
+title_tr: "Kai: Kayıp Madalyon — KeremikoGames"
+title_en: "Kai: Medallion Chase — KeremikoGames"
+description: "Kai: Medallion Chase — a hard-but-fair 2D platformer. No auto-run: you decide when to stop and when to jump."
+lang_toggle: true
+body_class: home
+---
+{%- assign play = site.store.google_play -%}
+{%- assign ios = site.store.app_store -%}
+<section class="hero">
+  <div class="hero-text">
+    <h1 class="logo">
+      <img lang="tr" src="{{ '/assets/img/logo-tr.webp' | relative_url }}" width="720" height="382" alt="Kai: Kayıp Madalyon" loading="lazy">
+      <img lang="en" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
+    </h1>
+    <p class="tagline">
+      <span lang="tr">Zor ama adil bir platform oyunu. Zıpla, tuzakları geç, madalyonu bul.</span>
+      <span lang="en">A hard but fair platformer. Jump, get past the traps, find the medallion.</span>
+    </p>
+    <div class="stores">
+      {%- if play != "" -%}
+      <a class="store" href="{{ play }}"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span></span></a>
+      {%- else -%}
+      <div class="store is-soon" aria-disabled="true"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span></span></div>
+      {%- endif -%}
+      {%- if ios != "" -%}
+      <a class="store" href="{{ ios }}"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span></span></a>
+      {%- else -%}
+      <div class="store is-soon" aria-disabled="true"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span></span></div>
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="{{ '/assets/img/hero-kai.webp' | relative_url }}" width="544" height="500" alt="">
+  </div>
+</section>
+
+<section class="card about">
+  <h2><span lang="tr">Madalyonun izinde</span><span lang="en">On the medallion's trail</span></h2>
+  <p lang="tr">Kai'nin köyünden çalınan madalyonun izi kanyona çıkıyor. Yol; kaktüsler, çöken kayalar, testereler ve pusudaki okçularla dolu.</p>
+  <p lang="en">The trail of the medallion stolen from Kai's village leads into the canyon. The path is full of cacti, crumbling rocks, saw blades and archers lying in ambush.</p>
+  <p lang="tr">Karakter kendi kendine koşmaz — ne zaman duracağına, ne zaman zıplayacağına sen karar verirsin. Her ölüm senin hatan, her geçiş senin başarın.</p>
+  <p lang="en">Kai never runs on autopilot — you decide when to stop and when to jump. Every death is your mistake, every clear is your win.</p>
+  <ul class="feats" lang="tr">
+    <li>Hassas dokunmatik kontrol, otomatik koşu yok</li>
+    <li>Kunai, uzun zıplama ve görünmezlik — altınla açılan yetenekler</li>
+    <li>Gizli odalar ve saklı altınlar</li>
+    <li>Her bölüm için dünya rekor tablosu ve haftalık ralli</li>
+  </ul>
+  <ul class="feats" lang="en">
+    <li>Precise touch controls, no auto-run</li>
+    <li>Kunai, long jump and invisibility — skills you unlock with gold</li>
+    <li>Hidden rooms and secret gold</li>
+    <li>A world record table for every level, plus a weekly rally</li>
+  </ul>
+</section>
+
+<section class="shots" aria-labelledby="shots-h">
+  <h2 id="shots-h"><span lang="tr">Oyundan kareler</span><span lang="en">Screenshots</span></h2>
+  <div class="shot-grid">
+    <img src="{{ '/assets/img/ekran-1.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kai kanyonda kayalar arasında zıplıyor / Kai jumping between canyon rocks">
+    <img src="{{ '/assets/img/ekran-2.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Köprüde bekleyen askerler / Soldiers waiting on a bridge">
+    <img src="{{ '/assets/img/ekran-3.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kaya içinde gizli oda ve altınlar / A hidden room with gold inside the rock">
+    <img src="{{ '/assets/img/ekran-4.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Ahşap iskelede okçular / Archers on a wooden scaffold">
+  </div>
+</section>
+
+<section class="card contact">
+  <h2><span lang="tr">İletişim</span><span lang="en">Contact</span></h2>
+  <p>
+    <span lang="tr">Soru, öneri ya da hata bildirimi için:</span>
+    <span lang="en">Questions, feedback or bug reports:</span>
+  </p>
+  <p><a class="btn-mail" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+</section>

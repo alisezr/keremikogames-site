@@ -1,2 +1,14 @@
 title: KeremikoGames
 description: "Kai: Kayıp Madalyon / Kai: Medallion Chase"
+url: "https://keremikogames.com"
+contact_email: "keremikogames@gmail.com"
+
+# Magaza linkleri — TEK YER. Bos ("") iken butonlar "Yakinda / Coming soon"
+# yazan, tiklanmayan kutu olarak cizilir; link girilince otomatik gercek link olur.
+# Iki nokta iceren her deger TIRNAK icinde olmali (ilk Pages derlemesi bu yuzden dustu).
+store:
+  google_play: ""   # canli olunca: "https://play.google.com/store/apps/details?id=com.keremikogames.kai"
+  app_store: ""     # canli olunca: App Store Connect'teki "https://apps.apple.com/..." adresi
+
+exclude:
+  - README.md
