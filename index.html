@@ -3,7 +3,7 @@ layout: default
 title: KeremikoGames
 title_tr: "Kai: Kayıp Madalyon — KeremikoGames"
 title_en: "Kai: Medallion Chase — KeremikoGames"
-description: "Kai: Medallion Chase — a hard-but-fair 2D platformer. No auto-run: you decide when to stop and when to jump."
+description: "Kai: Medallion Chase — a hard-but-fair 2D platformer. Every jump is yours. Race the clock, set the world record and claim the top of the leaderboard."
 lang_toggle: true
 body_class: home
 ---
@@ -16,8 +16,8 @@ body_class: home
       <img lang="en" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
     </h1>
     <p class="tagline">
-      <span lang="tr">Zor ama adil bir platform oyunu. Zıpla, tuzakları geç, madalyonu bul.</span>
-      <span lang="en">A hard but fair platformer. Jump, get past the traps, find the medallion.</span>
+      <span lang="tr">Bu oyun korkaklara göre değil. Kanyonu aş, madalyonun izini sür, adını liderlik tablosunun zirvesine yazdır.</span>
+      <span lang="en">Not for the faint of heart. Conquer the canyon, chase the medallion and put your name at the top of the leaderboard.</span>
     </p>
     <div class="stores">
       {%- if play != "" -%}
@@ -38,28 +38,34 @@ body_class: home
 </section>
 
 <section class="card about">
-  <h2><span lang="tr">Madalyonun izinde</span><span lang="en">On the medallion's trail</span></h2>
-  <p lang="tr">Kai'nin köyünden çalınan madalyonun izi kanyona çıkıyor. Yol; kaktüsler, çöken kayalar, testereler ve pusudaki okçularla dolu.</p>
-  <p lang="en">The trail of the medallion stolen from Kai's village leads into the canyon. The path is full of cacti, crumbling rocks, saw blades and archers lying in ambush.</p>
-  <p lang="tr">Karakter kendi kendine koşmaz — ne zaman duracağına, ne zaman zıplayacağına sen karar verirsin. Her ölüm senin hatan, her geçiş senin başarın.</p>
-  <p lang="en">Kai never runs on autopilot — you decide when to stop and when to jump. Every death is your mistake, every clear is your win.</p>
+  <h2><span lang="tr">Kanyon affetmez</span><span lang="en">The canyon shows no mercy</span></h2>
+  <p lang="tr">Bir sabah madalyon yerinde yoktu. Geriye yalnızca çocukluktan kalma eski bir işaret kalmıştı — ve iz, kanyonun derinliklerine uzanıyor. Önünde kaktüsler, çöken kayalar, testereler ve pusuda bekleyen okçular var. Geri dönüş yok.</p>
+  <p lang="en">One morning, the medallion was gone. All that was left was an old mark from childhood — and a trail leading deep into the canyon. Cacti, crumbling rocks, saw blades and archers lie in wait. There's no turning back.</p>
+  <p lang="tr">Her adım senin elinde. Ne zaman bekleyeceğine, ne zaman atlayacağına sen karar verirsin. Düştüysen sebebini bilirsin; geçtiysen o zafer tamamen senin. Zor mu? Evet. Haksız mı? Asla.</p>
+  <p lang="en">Every move is yours. You decide when to hold back and when to leap. When you fall, you'll know exactly why — and when you make it, the win is all yours. Hard? Absolutely. Unfair? Never.</p>
+  <p lang="tr">Bölümü bitirmek sadece başlangıç. Her bölümün kendi dünya rekor tablosu var: saliseleri kazı, rakiplerini geride bırak, zirveye yerleş. Haftalık rallide bölümleri art arda koşarsın, her ölüm süreni uzatır — ve her pazartesi yarış sıfırdan başlar.</p>
+  <p lang="en">Finishing a level is only the beginning. Every level has its own world record table — shave off every hundredth of a second, leave your rivals behind and claim the top spot. In the weekly rally you run levels back to back, every death costs you time, and every Monday the race starts over.</p>
   <ul class="feats" lang="tr">
-    <li>Hassas dokunmatik kontrol, otomatik koşu yok</li>
-    <li>Kunai, uzun zıplama ve görünmezlik — altınla açılan yetenekler</li>
-    <li>Gizli odalar ve saklı altınlar</li>
-    <li>Her bölüm için dünya rekor tablosu ve haftalık ralli</li>
+    <li>Salise hassasiyetinde süre ve her bölüm için dünya rekor tablosu</li>
+    <li>Haftalık ralli: her hafta sıfırlanan sıralama, zirve için yeni bir şans</li>
+    <li>Hassas dokunmatik kontrol: istediğin yerde dur, tam zamanında zıpla</li>
+    <li>Kunai, uzun zıplama ve görünmezlik — altınla aç, yolunu kendin çiz</li>
+    <li>Gizli odalar ve saklı altınlar — dikkatli bakan kazanır</li>
   </ul>
   <ul class="feats" lang="en">
-    <li>Precise touch controls, no auto-run</li>
-    <li>Kunai, long jump and invisibility — skills you unlock with gold</li>
-    <li>Hidden rooms and secret gold</li>
-    <li>A world record table for every level, plus a weekly rally</li>
+    <li>Times to the hundredth of a second and a world record table for every level</li>
+    <li>Weekly rally: a fresh leaderboard every week, a new shot at the top</li>
+    <li>Precise touch controls: stop exactly where you want, jump exactly when you mean to</li>
+    <li>Kunai, long jump and invisibility — unlock them with gold and play your way</li>
+    <li>Hidden rooms and secret gold for those who look closely</li>
   </ul>
 </section>
 
 <section class="shots" aria-labelledby="shots-h">
-  <h2 id="shots-h"><span lang="tr">Oyundan kareler</span><span lang="en">Screenshots</span></h2>
+  <h2 id="shots-h"><span lang="tr">Kanyondan kareler</span><span lang="en">Inside the canyon</span></h2>
   <div class="shot-grid">
+    <img class="shot-main" lang="tr" src="{{ '/assets/img/menu-tr.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Kayıp Madalyon ana menüsü">
+    <img class="shot-main" lang="en" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Medallion Chase main menu">
     <img src="{{ '/assets/img/ekran-1.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kai kanyonda kayalar arasında zıplıyor / Kai jumping between canyon rocks">
     <img src="{{ '/assets/img/ekran-2.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Köprüde bekleyen askerler / Soldiers waiting on a bridge">
     <img src="{{ '/assets/img/ekran-3.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kaya içinde gizli oda ve altınlar / A hidden room with gold inside the rock">
@@ -68,10 +74,10 @@ body_class: home
 </section>
 
 <section class="card contact">
-  <h2><span lang="tr">İletişim</span><span lang="en">Contact</span></h2>
+  <h2><span lang="tr">Bize yaz</span><span lang="en">Get in touch</span></h2>
   <p>
-    <span lang="tr">Soru, öneri ya da hata bildirimi için:</span>
-    <span lang="en">Questions, feedback or bug reports:</span>
+    <span lang="tr">Hata bildirimi, öneri ya da soru — hepsini okuyoruz:</span>
+    <span lang="en">Bug reports, ideas or questions — we read them all:</span>
   </p>
   <p><a class="btn-mail" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 </section>

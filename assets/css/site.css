@@ -68,6 +68,7 @@ a.store:hover{filter:brightness(1.05);color:var(--cta-yazi)}
 .shots h2{text-align:center}
 .shot-grid{display:grid;gap:12px}
 .shot-grid img{width:100%;border-radius:14px;border:3px solid var(--kontur)}
+.shot-grid .shot-main{grid-column:1/-1}
 
 .contact{text-align:center}
 .btn-mail{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border-radius:14px;
