@@ -46,8 +46,8 @@ d.lang=l;document.title=d.getAttribute('data-title-'+l);})();
 <main id="main">
 {%- if page.name contains ".md" %}
 {%- comment %} Markdown sayfalar (gizlilik) metne dokunulmadan bu kabukla giydirilir. {% endcomment %}
-{%- if content contains 'id="en"' %}
-<p class="jump"><a href="#en">English version ↓</a></p>
+{%- if page.url contains '/privacy/' %}
+<p class="jump"><a href="{{ '/privacy/' | relative_url }}">Türkçe</a> · <a href="{{ '/privacy/#en' | relative_url }}">English</a> · <a href="{{ '/privacy/es/' | relative_url }}">Español</a> · <a href="{{ '/privacy/pt/' | relative_url }}">Português</a> · <a href="{{ '/privacy/de/' | relative_url }}">Deutsch</a></p>
 {%- endif %}
 <article class="prose">
 {{ content }}
@@ -58,7 +58,7 @@ d.lang=l;document.title=d.getAttribute('data-title-'+l);})();
 </main>
 <footer class="foot">
   <p>
-    <a href="{{ '/privacy/' | relative_url }}"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span><span lang="es">Política de privacidad</span><span lang="pt">Política de Privacidade</span><span lang="de">Datenschutzerklärung</span></a>
+    <a lang="tr" href="{{ '/privacy/' | relative_url }}">Gizlilik Politikası</a><a lang="en" href="{{ '/privacy/#en' | relative_url }}">Privacy Policy</a><a lang="es" href="{{ '/privacy/es/' | relative_url }}">Política de privacidad</a><a lang="pt" href="{{ '/privacy/pt/' | relative_url }}">Política de Privacidade</a><a lang="de" href="{{ '/privacy/de/' | relative_url }}">Datenschutzerklärung</a>
     <span aria-hidden="true">·</span>
     <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
   </p>
