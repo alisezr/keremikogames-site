@@ -3,6 +3,9 @@ layout: default
 title: KeremikoGames
 title_tr: "Kai: Kayıp Madalyon — KeremikoGames"
 title_en: "Kai: Medallion Chase — KeremikoGames"
+title_es: "Kai: Medallion Chase — KeremikoGames"
+title_pt: "Kai: Medallion Chase — KeremikoGames"
+title_de: "Kai: Medallion Chase — KeremikoGames"
 description: "Kai: Medallion Chase — a hard-but-fair 2D platformer. Every jump is yours. Race the clock, set the world record and claim the top of the leaderboard."
 lang_toggle: true
 body_class: home
@@ -14,21 +17,27 @@ body_class: home
     <h1 class="logo">
       <img lang="tr" src="{{ '/assets/img/logo-tr.webp' | relative_url }}" width="720" height="382" alt="Kai: Kayıp Madalyon" loading="lazy">
       <img lang="en" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
+      <img lang="es" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
+      <img lang="pt" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
+      <img lang="de" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
     </h1>
     <p class="tagline">
       <span lang="tr">Bu oyun korkaklara göre değil. Kanyonu aş, madalyonun izini sür, adını liderlik tablosunun zirvesine yazdır.</span>
       <span lang="en">Not for the faint of heart. Conquer the canyon, chase the medallion and put your name at the top of the leaderboard.</span>
+      <span lang="es">No apto para cardíacos. Conquista el cañón, sigue la pista del medallón y pon tu nombre en la cima de la clasificación.</span>
+      <span lang="pt">Não é para os fracos. Vença o cânion, siga o rastro do medalhão e coloque seu nome no topo do ranking.</span>
+      <span lang="de">Nichts für schwache Nerven. Bezwinge die Schlucht, jag das Medaillon und schreib deinen Namen ganz oben in die Bestenliste.</span>
     </p>
     <div class="stores">
       {%- if play != "" -%}
-      <a class="store" href="{{ play }}"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span></span></a>
+      <a class="store" href="{{ play }}"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span><span lang="es">Descargar</span><span lang="pt">Baixar</span><span lang="de">Jetzt laden</span></span></a>
       {%- else -%}
-      <div class="store is-soon" aria-disabled="true"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span></span></div>
+      <div class="store is-soon" aria-disabled="true"><span class="store-name">Google Play</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span><span lang="es">Próximamente</span><span lang="pt">Em breve</span><span lang="de">Demnächst</span></span></div>
       {%- endif -%}
       {%- if ios != "" -%}
-      <a class="store" href="{{ ios }}"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span></span></a>
+      <a class="store" href="{{ ios }}"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">İndir</span><span lang="en">Get it</span><span lang="es">Descargar</span><span lang="pt">Baixar</span><span lang="de">Jetzt laden</span></span></a>
       {%- else -%}
-      <div class="store is-soon" aria-disabled="true"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span></span></div>
+      <div class="store is-soon" aria-disabled="true"><span class="store-name">App Store</span><span class="store-note"><span lang="tr">Yakında</span><span lang="en">Coming soon</span><span lang="es">Próximamente</span><span lang="pt">Em breve</span><span lang="de">Demnächst</span></span></div>
       {%- endif -%}
     </div>
   </div>
@@ -38,13 +47,22 @@ body_class: home
 </section>
 
 <section class="card about">
-  <h2><span lang="tr">Kanyon affetmez</span><span lang="en">The canyon shows no mercy</span></h2>
+  <h2><span lang="tr">Kanyon affetmez</span><span lang="en">The canyon shows no mercy</span><span lang="es">El cañón no perdona</span><span lang="pt">O cânion não perdoa</span><span lang="de">Die Schlucht kennt keine Gnade</span></h2>
   <p lang="tr">Bir sabah madalyon yerinde yoktu. Geriye yalnızca çocukluktan kalma eski bir işaret kalmıştı — ve iz, kanyonun derinliklerine uzanıyor. Önünde kaktüsler, çöken kayalar, testereler ve pusuda bekleyen okçular var. Geri dönüş yok.</p>
   <p lang="en">One morning, the medallion was gone. All that was left was an old mark from childhood — and a trail leading deep into the canyon. Cacti, crumbling rocks, saw blades and archers lie in wait. There's no turning back.</p>
+  <p lang="es">Una mañana, el medallón había desaparecido. Solo quedaba una vieja marca de la infancia… y un rastro que se adentra en lo más profundo del cañón. Cactus, rocas que se derrumban, sierras y arqueros te esperan al acecho. No hay vuelta atrás.</p>
+  <p lang="pt">Uma manhã, o medalhão tinha sumido. Só restou uma velha marca de infância — e um rastro que leva às profundezas do cânion. Cactos, rochas que desabam, serras e arqueiros estão à espreita. Não tem volta.</p>
+  <p lang="de">Eines Morgens war das Medaillon verschwunden. Zurück blieb nur ein altes Zeichen aus Kindertagen – und eine Spur, die tief in die Schlucht führt. Kakteen, einstürzende Felsen, Sägeblätter und Bogenschützen lauern auf dich. Es gibt kein Zurück.</p>
   <p lang="tr">Zor mu? Evet. Haksız mı? Asla. Düş, kalk, tekrar dene — o bölümü sonunda geçtiğinde zafer tamamen senin.</p>
   <p lang="en">Hard? Absolutely. Unfair? Never. Fall, get up, try again — and when you finally clear it, the win is all yours.</p>
+  <p lang="es">¿Difícil? Totalmente. ¿Injusto? Jamás. Cae, levántate, inténtalo de nuevo… y cuando por fin lo superes, la victoria será toda tuya.</p>
+  <p lang="pt">Difícil? Com certeza. Injusto? Nunca. Caia, levante, tente de novo — e quando finalmente passar, a vitória é toda sua.</p>
+  <p lang="de">Schwer? Absolut. Unfair? Niemals. Fall hin, steh auf, versuch's nochmal – und wenn du es endlich schaffst, gehört der Sieg ganz dir.</p>
   <p lang="tr">Bölümü bitirmek sadece başlangıç. Her bölümün kendi dünya rekor tablosu var: saliseleri kazı, rakiplerini geride bırak, zirveye yerleş.</p>
   <p lang="en">Finishing a level is only the beginning. Every level has its own world record table — shave off every hundredth of a second, leave your rivals behind and claim the top spot.</p>
+  <p lang="es">Terminar un nivel es solo el comienzo. Cada nivel tiene su propia tabla de récords mundiales: recorta cada centésima de segundo, deja atrás a tus rivales y quédate con el primer lugar.</p>
+  <p lang="pt">Terminar a fase é só o começo. Cada fase tem sua própria tabela de recordes mundiais: corte cada centésimo de segundo, deixe os rivais para trás e conquiste o topo.</p>
+  <p lang="de">Ein Level zu schaffen ist erst der Anfang. Jedes Level hat seine eigene Weltrekord-Tabelle: Hol jede Hundertstelsekunde heraus, lass deine Rivalen hinter dir und sichere dir Platz eins.</p>
   <ul class="feats" lang="tr">
     <li>Salise hassasiyetinde süre ve her bölüm için dünya rekor tablosu</li>
     <li>Ölümcül tuzaklar ve pusudaki okçular — hepsini alt et</li>
@@ -61,13 +79,40 @@ body_class: home
     <li>New mode Arrow Storm: dodge arrows raining from the sky and see how long you last</li>
     <li>Hidden rooms and secret gold for those who look closely</li>
   </ul>
+  <ul class="feats" lang="es">
+    <li>Tiempos al centésimo de segundo y una tabla de récords mundiales en cada nivel</li>
+    <li>Trampas mortales y arqueros al acecho: supéralos a todos</li>
+    <li>Combate con katana: encadena combos, empuja a los enemigos y corta las flechas con tu espada</li>
+    <li>Kunai, salto largo, invisibilidad y bola de fuego: desbloquéalos con oro y juega a tu manera</li>
+    <li>Nuevo modo Tormenta de Flechas: esquiva las flechas que caen del cielo y demuestra cuánto resistes</li>
+    <li>Salas secretas y oro escondido para quienes miran con atención</li>
+  </ul>
+  <ul class="feats" lang="pt">
+    <li>Tempo cravado em centésimos de segundo e uma tabela de recordes mundiais para cada fase</li>
+    <li>Armadilhas mortais e arqueiros à espreita — vença todos</li>
+    <li>Combate com katana: encadeie combos, empurre os inimigos, corte flechas com a lâmina</li>
+    <li>Kunai, salto longo, invisibilidade e bola de fogo — desbloqueie com ouro e jogue do seu jeito</li>
+    <li>Novo modo Chuva de Flechas: desvie das flechas que caem do céu e veja quanto tempo você aguenta</li>
+    <li>Salas secretas e ouro escondido para quem presta atenção</li>
+  </ul>
+  <ul class="feats" lang="de">
+    <li>Zeiten auf die Hundertstelsekunde und eine Weltrekord-Tabelle für jedes Level</li>
+    <li>Tödliche Fallen und Bogenschützen im Hinterhalt – überwinde sie alle</li>
+    <li>Katana-Kampf: Combos verketten, Gegner zurückstoßen, Pfeile mit der Klinge parieren</li>
+    <li>Kunai, Weitsprung, Unsichtbarkeit und Feuerball – schalte sie mit Gold frei und spiel auf deine Art</li>
+    <li>Neuer Modus Pfeilsturm: Weich den Pfeilen vom Himmel aus und zeig, wie lange du durchhältst</li>
+    <li>Geheimräume und verstecktes Gold für alle, die genau hinsehen</li>
+  </ul>
 </section>
 
 <section class="shots" aria-labelledby="shots-h">
-  <h2 id="shots-h"><span lang="tr">Kanyondan kareler</span><span lang="en">Inside the canyon</span></h2>
+  <h2 id="shots-h"><span lang="tr">Kanyondan kareler</span><span lang="en">Inside the canyon</span><span lang="es">Dentro del cañón</span><span lang="pt">Por dentro do cânion</span><span lang="de">Einblicke in die Schlucht</span></h2>
   <div class="shot-grid">
     <img class="shot-main" lang="tr" src="{{ '/assets/img/menu-tr.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Kayıp Madalyon ana menüsü">
     <img class="shot-main" lang="en" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Medallion Chase main menu">
+    <img class="shot-main" lang="es" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Menú principal de Kai: Medallion Chase">
+    <img class="shot-main" lang="pt" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Menu principal de Kai: Medallion Chase">
+    <img class="shot-main" lang="de" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Hauptmenü von Kai: Medallion Chase">
     <img src="{{ '/assets/img/ekran-1.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kai testerelerin üstünden zıplıyor / Kai jumping over spinning saws">
     <img src="{{ '/assets/img/ekran-2.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Ok Fırtınası modu: gökten yağan oklar / Arrow Storm mode: arrows raining from the sky">
     <img src="{{ '/assets/img/ekran-3.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kaya içinde gizli oda ve altınlar / A hidden room with gold inside the rock">
@@ -76,10 +121,13 @@ body_class: home
 </section>
 
 <section class="card contact">
-  <h2><span lang="tr">Bize yaz</span><span lang="en">Get in touch</span></h2>
+  <h2><span lang="tr">Bize yaz</span><span lang="en">Get in touch</span><span lang="es">Escríbenos</span><span lang="pt">Fale com a gente</span><span lang="de">Schreib uns</span></h2>
   <p>
     <span lang="tr">Hata bildirimi, öneri ya da soru — hepsini okuyoruz:</span>
     <span lang="en">Bug reports, ideas or questions — we read them all:</span>
+    <span lang="es">Reportes de errores, ideas o preguntas. Leemos todo:</span>
+    <span lang="pt">Relatos de bugs, ideias ou dúvidas — lemos tudo:</span>
+    <span lang="de">Fehlermeldungen, Ideen oder Fragen – wir lesen alles:</span>
   </p>
   <p><a class="btn-mail" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 </section>
