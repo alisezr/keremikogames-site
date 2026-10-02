@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-title-tr="{{ page.title_tr | default: page.title | default: site.title | escape }}" data-title-en="{{ page.title_en | default: page.title | default: site.title | escape }}">
+<html lang="en" data-title-tr="{{ page.title_tr | default: page.title | default: site.title | escape }}" data-title-en="{{ page.title_en | default: page.title | default: site.title | escape }}" data-title-es="{{ page.title_es | default: page.title | default: site.title | escape }}" data-title-pt="{{ page.title_pt | default: page.title | default: site.title | escape }}" data-title-de="{{ page.title_de | default: page.title | default: site.title | escape }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,24 +16,30 @@
 <link rel="preload" href="{{ '/assets/fonts/LuckiestGuy-Regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 <script>
-/* Dil: kayitli secim > tarayici dili (tr* ise TR) > EN. localStorage kapaliysa sessizce gecer. */
+/* Dil: kayitli secim > tarayici dili (tr, es, pt ya da de ile basliyorsa o dil) > EN. localStorage kapaliysa sessizce gecer. */
 (function(){var d=document.documentElement,l=null;try{l=localStorage.getItem('kg-lang')}catch(e){}
-if(l!=='tr'&&l!=='en'){var n=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase();l=n.indexOf('tr')===0?'tr':'en'}
+if(!/^(tr|en|es|pt|de)$/.test(l)){var n=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase(),m=/^(tr|es|pt|de)/.exec(n);l=m?m[1]:'en'}
 d.lang=l;document.title=d.getAttribute('data-title-'+l);})();
 </script>
 </head>
 <body class="{{ page.body_class | default: 'page' }}">
-<a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
+<a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span><span lang="es">Saltar al contenido</span><span lang="pt">Pular para o conteúdo</span><span lang="de">Zum Inhalt springen</span></a>
 <header class="topbar">
   <a class="brand" href="{{ '/' | relative_url }}">
     <img src="{{ '/assets/img/icon-180.png' | relative_url }}" width="40" height="40" alt="">
     <span>KeremikoGames</span>
   </a>
   {% if page.lang_toggle %}
-  <div class="lang" role="group" aria-label="Dil / Language">
+  <div class="lang" role="group" aria-label="Dil / Language / Idioma / Sprache">
     <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
     <span aria-hidden="true">|</span>
     <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
   </div>
   {% endif %}
 </header>
@@ -52,7 +58,7 @@ d.lang=l;document.title=d.getAttribute('data-title-'+l);})();
 </main>
 <footer class="foot">
   <p>
-    <a href="{{ '/privacy/' | relative_url }}"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span></a>
+    <a href="{{ '/privacy/' | relative_url }}"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span><span lang="es">Política de privacidad</span><span lang="pt">Política de Privacidade</span><span lang="de">Datenschutzerklärung</span></a>
     <span aria-hidden="true">·</span>
     <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
   </p>

@@ -1,7 +1,7 @@
 KeremikoGames web sitesi (keremikogames.com) — GitHub Pages.
 Yalnız statik sayfalar + app-ads.txt. Oyunun kaynak kodu burada DEĞİL.
 
-- `index.html` — tek sayfa vitrin (TR/EN; dil: kayıtlı seçim > tarayıcı dili `tr*` ise TR > EN).
+- `index.html` — tek sayfa vitrin (TR/EN/ES/PT/DE; dil: kayıtlı seçim > tarayıcı dili `tr*`/`es*`/`pt*`/`de*` ise o dil > EN).
 - `privacy.md` — gizlilik politikası (`/privacy/`), metni burada düzenlenir; kabuğu `_layouts/default.html`.
 - `app-ads.txt`, `CNAME` — kök dizinde kalır, tasarım işlerinde DEĞİŞMEZ.
 - Mağaza linkleri: `_config.yml` → `store:` (boşken butonlar "Yakında / Coming soon").
