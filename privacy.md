@@ -29,10 +29,12 @@ paylaştığını açıklar.
   verilerini işler.
 - "Reklamları Kaldır" satın alımı Google Play veya App Store üzerinden
   yapılır. Ödeme bilgilerinizi görmeyiz.
-- Ayarlar'daki **VERİ PAYLAŞIMI** düğmesi oyun istatistiklerini (Avrupa ve
-  Brezilya'da ayrıca kişiselleştirilmiş reklamı) kapatır. Liderlik tablosu, çökme
-  raporları ve uzaktan ayar oyunun çalışması için gereklidir ve bu
-  düğmeden bağımsız çalışır.
+- Ayarlar'daki **VERİ PAYLAŞIMI** düğmesi oyun istatistiklerini kapatır;
+  izin ekranı gösterilen ülkelerde (Avrupa Birliği / Avrupa Ekonomik Alanı,
+  Birleşik Krallık, İsviçre ve Brezilya) kişiselleştirilmiş reklamı da
+  kapatır. Liderlik tablosu, çökme raporları, uzaktan ayar ve satın alma
+  doğrulaması oyunun çalışması için gereklidir ve bu düğmeden bağımsız
+  çalışır.
 
 ## Cihazınızda kalan veriler
 
@@ -58,7 +60,7 @@ değilsiniz.
 Liderlik tablosu verileri **VERİ PAYLAŞIMI** düğmesinden bağımsızdır:
 düğme kapalıyken ve izin ekranında izin vermediyseniz de
 gönderilir, çünkü liderlik tablosunun çalışması için gereklidir. Unity
-gizlilik politikası: https://unity.com/legal/privacy-policy
+gizlilik politikası: https://unity.com/legal/game-player-and-app-user-privacy-policy
 
 ## Uzaktan ayar (Unity Remote Config)
 
@@ -80,9 +82,12 @@ Diagnostics hizmetine bir rapor gönderilir. Rapor şunları içerir:
 - hata ayrıntıları (hata türü ve oyunun kodunda nerede oluştuğu),
 - cihaz modeli, işletim sistemi sürümü ve oyun sürümü gibi teknik
   bilgiler ve performans ölçümleri,
-- Unity'nin bu kuruluma verdiği rastgele bir kurulum kimliği.
+- Unity'nin bu kuruluma verdiği rastgele bir kurulum kimliği,
+- oyunun hatadan hemen önce yazdığı son birkaç teknik kayıt (log) satırı.
 
-Bu raporlar adınızı veya iletişim bilgilerinizi içermez. Unity bu
+Bu raporlar e-posta adresi veya telefon numarası gibi iletişim bilgilerinizi
+içermez. Ancak log satırlarında anonim oyuncu kimliğiniz ve oyun içinde
+girdiğiniz oyuncu adı bulunabilir. Unity bu
 verileri varsayılan olarak 90 gün saklar
 (https://docs.unity.com/en-us/cloud/developer-data/privacy-overview).
 
@@ -100,19 +105,26 @@ hizmetine gönderilir:
 - ölümler: bölüm, ölüm sebebi (okçu, asker, tuzak türü, düşme) ve
   bölümdeki konum,
 - bölüm süresi, toplanan altın, yetenek kullanımı,
-- oyun içi altınla yapılan mağaza alımları ve ölüm ekranındaki "devam"
-  tercihi.
+- oyun içi altınla ya da reklam izleyerek yapılan mağaza alımları ve ölüm
+  ekranındaki "devam" tercihi,
+- "Reklamları Kaldır" satın alımı (ürün, fiyat, işlem numarası ve mağaza
+  makbuzu; bunu Unity In-App Purchasing gönderir).
 
-Bu verilerle birlikte Unity Analytics'in kendisi de anonim bir oyuncu
-kimliği, cihaz modeli, işletim sistemi, oyun sürümü, oturum başlangıç ve
-bitiş zamanı ile IP adresinizden çıkarılan ülke bilgisini işler. Adınızı
-veya iletişim bilgilerinizi içermez. Bu veriler reklam amacıyla
-kullanılmaz ve satılmaz. Ham veriler 13 ay saklanır, sonra silinir.
+Unity Analytics bunlarla birlikte şunları da kendiliğinden işler: IP
+adresiniz (ülkeyi belirlemek için), Unity'nin bu kuruluma verdiği rastgele
+kurulum kimliği, anonim oyuncu kimliğiniz (liderlik tablosundakiyle aynı),
+cihaz tanımlayıcısı (iOS'ta IDFV, Android'de cihazın Android kimliğinden
+türetilen bir değer), cihaz modeli, işletim sistemi, cihaz dili, işlemci,
+bellek, ekran ve grafik bilgisi, pil ve ses seviyesi, oyun sürümü, oturum
+başlangıç ve bitiş zamanı. Adınızı veya iletişim bilgilerinizi içermez. Bu
+veriler reklam amacıyla kullanılmaz ve satılmaz. Ham veriler 13 ay
+saklanır, sonra silinir.
 
 **Kapatma:** Ayarlar ekranındaki **VERİ PAYLAŞIMI** düğmesiyle toplamayı
 istediğiniz zaman kapatabilirsiniz. Avrupa Birliği / Avrupa Ekonomik
-Alanı, Birleşik Krallık, İsviçre ve Brezilya'da istatistik yalnızca ilk açılıştaki
-izin ekranında onay verirseniz toplanır.
+Alanı, Birleşik Krallık, İsviçre ve Brezilya'da (ve oyun bulunduğunuz
+ülkeyi belirleyemezse) istatistik yalnızca onay verirseniz toplanır: ilk
+açılıştaki izin ekranında ya da sonradan **VERİ PAYLAŞIMI** düğmesiyle.
 
 ## Reklamlar
 
@@ -137,9 +149,10 @@ sistemi başlatılmaz. Tercihinizi istediğiniz zaman Ayarlar ekranındaki
 **VERİ PAYLAŞIMI** düğmesinden değiştirebilirsiniz.
 İzin vermezseniz reklamlar kişiselleştirilmeden gösterilir ve oyun
 istatistiği toplanmaz. İzin ekranının
-gösterilip gösterilmeyeceğine karar vermek için oyun, SIM kartınızın veya
-mobil ağınızın ülke kodunu ve cihaz dilini cihaz üzerinde okur. Bu bilgi
-hiçbir yere gönderilmez. Diğer ülkelerde izin ekranı gösterilmez,
+gösterilip gösterilmeyeceğine karar vermek için oyun, Android'de SIM
+kartınızın veya mobil ağınızın ülke kodunu, bunlar yoksa (ve iOS'ta)
+cihazınızın dil ve bölge ayarını cihaz üzerinde okur. Bu bilgi hiçbir
+yere gönderilmez. Diğer ülkelerde izin ekranı gösterilmez,
 reklamlar kişiselleştirilebilir; bunu aşağıdaki cihaz ayarlarıyla
 sınırlayabilirsiniz.
 
@@ -166,13 +179,14 @@ almanın size ait olduğunu doğrulamak için mağazanın gönderdiği satın al
 kaydı (sipariş numarası, ürün, tarih) Unity In-App Purchasing ile
 cihazınızda işlenir. Unity In-App Purchasing, satın alma hizmetinin bir
 parçası olarak bu satın alma kaydını ve cihaz bilgilerini Unity
-Technologies'e de gönderir. Ödemeler Google'ın (https://policies.google.com/privacy) veya
+Technologies'e de gönderir; bu, **VERİ PAYLAŞIMI** düğmesinden bağımsızdır.
+Ödemeler Google'ın (https://policies.google.com/privacy) veya
 Apple'ın (https://www.apple.com/legal/privacy/) gizlilik politikasına
 tabidir.
 
 ## Bildirimler
 
-Oyun, günlük haklarınız yenilendiğinde sizi haberdar etmek için cihazınızda
+Oyun, günlük çark, görev ve ödül haklarınız yenilendiğinde sizi haberdar etmek için cihazınızda
 yerel bildirim planlar. Bildirimler cihazınızın kendisinde oluşturulur;
 bunun için hiçbir sunucuya veri gönderilmez ve uzaktan (push) bildirim
 kullanılmaz. Bildirimleri Ayarlar ekranından veya cihazınızın bildirim
@@ -275,35 +289,41 @@ sahip olabilirsiniz:
 
 **Nasıl kullanılır:**
 
-- Rızayı geri çekme ve istatistiğe itiraz: Ayarlar'daki **VERİ PAYLAŞIMI**
-  düğmesi.
-- Verilerinizi silme: Ayarlar > **VERİLERİMİ SİL** düğmesi. Onayınızdan
-  sonra bu düğme:
-  - oyun istatistiklerinizin Unity Analytics sunucularından silinmesini
-    ister ve istatistik toplamayı durdurur,
+- **Rızayı geri çekme ve istatistiğe itiraz:** Ayarlar'daki **VERİ
+  PAYLAŞIMI** düğmesi.
+- **Oyuncu adını düzeltme:** oyun içindeki isim ekranı.
+- **Silme:** Ayarlar'daki **VERİLERİMİ SİL** düğmesi. Onayınızdan sonra bu
+  düğme:
+  - bu cihazda daha önce istatistik toplandıysa, bunların Unity Analytics
+    sunucularından silinmesini ister,
   - Unity'deki anonim oyuncu hesabınızı (oyuncu kimliğinizi) siler,
-  - cihazınızdaki tüm oyun kayıtlarını (ilerleme, altın, eşyalar, ayarlar,
-    izin ve veri paylaşımı tercihleri) siler.
+  - cihazınızdaki oyun kayıtlarını (ilerleme, altın, eşyalar, oyuncu adı,
+    ayarlar, izin tercihi) siler.
 
   İnternet bağlantısı yoksa hiçbir şey silinmez. "Reklamları Kaldır"
-  satın alımınız Google Play veya App Store hesabınızda kalır ve yeniden
-  yüklenebilir. Liderlik tablolarındaki süre ve puan kayıtlarınız bu
-  düğmeyle silinmez; bunların da silinmesini istiyorsanız düğmeye basmadan
-  önce liderlik tablolarında görünen adınızı sondaki "#" sayısıyla birlikte
-  (ör. Kai#1234) aşağıdaki adrese yazın. Çökme raporları için oyunda bir
-  silme yolu yoktur; Unity bunları varsayılan olarak 90 gün sonra siler.
-- Oyuncu adını düzeltme: oyun içindeki isim ekranı.
-- Diğer tüm talepler için keremikogames@gmail.com adresine yazın. Silme
-  talebini e-postayla da iletebilirsiniz: liderlik kaydınızın ve anonim
-  oyuncu kimliğinizin silinmesini istiyorsanız, liderlik tablolarında
-  görünen adınızı sondaki "#" sayısıyla birlikte (ör. Kai#1234) yazın;
-  kaydı Unity'nin araçlarıyla sileriz.
-- Oyun istatistikleri ve çökme raporları adınıza değil, oyunun size
-  göstermediği rastgele kimliklere bağlıdır. Bu yüzden e-postayla gelen bir
-  talebi bu verilerle eşleştiremeyebiliriz; eşleştiremezsek bunu size
-  bildiririz. **VERİLERİMİ SİL** düğmesi istatistiklerin silinmesini
-  cihazınızdaki kimlikle istediği için bu sınır istatistikler için düğmede
-  geçerli değildir; çökme raporları için geçerlidir.
+  satın alımınız Google Play veya App Store hesabınızda kalır ve geri
+  yüklenebilir. Tercihleriniz de silindiği için oyun sonraki açılışta ilk
+  kurulumdaki gibi davranır: izin ekranı gösterilen ülkelerde izniniz
+  yeniden sorulur. Diğer ülkelerde **VERİ PAYLAŞIMI**'nı kapattıysanız bu
+  tercih korunur; açıksa açık kalır.
+
+  Bu düğme şunları **silmez**:
+  - **Liderlik tablosu kayıtları** (süre, puan ve görünen ad). Silinmesini
+    istiyorsanız düğmeye basmadan önce liderlik tablolarında görünen
+    adınızı sondaki "#" sayısıyla birlikte (ör. Kai#1234)
+    keremikogames@gmail.com adresine yazın.
+  - **Çökme raporları:** oyunda bir silme yolu yoktur; Unity bunları
+    varsayılan olarak 90 gün sonra siler.
+- **E-postayla talepler:** erişim, kopya, düzeltme, silme, kısıtlama ve
+  taşınabilirlik talepleri için keremikogames@gmail.com adresine yazın.
+  Liderlik kaydınızın ve anonim oyuncu kimliğinizin silinmesini
+  istiyorsanız liderlik tablolarında görünen adınızı "#" sayısıyla
+  birlikte yazın; kaydı Unity'nin araçlarıyla sileriz. Oyun istatistikleri
+  ve çökme raporları adınıza değil, oyunun size göstermediği rastgele
+  kimliklere bağlıdır; e-postayla gelen bir talebi bu verilerle
+  eşleştiremeyebiliriz, eşleştiremezsek size bildiririz. İstatistikleriniz
+  için **VERİLERİMİ SİL** düğmesini kullanın: düğme silme isteğini
+  cihazınızdaki kimlikle gönderir.
 - Cihazınızdaki verileri uygulamayı kaldırarak da silebilirsiniz.
 - Reklam iş ortaklarının işlediği veriler için yukarıdaki reklam
   politikasında anlatılan yolları ve cihazınızın reklam ayarlarını
@@ -320,6 +340,11 @@ değişir (ör. Almanya'da 16); Birleşik Krallık'ta 13'tür. Ülkenizdeki bu
 yaşın altındaysanız izin ekranında "Kabul Et"i yalnızca ebeveyninizin
 onayıyla seçin, aksi hâlde "Reddet"i seçin. Reddetmeniz oyunu oynamanızı
 engellemez.
+
+Brezilya'da çocukların (12 yaşından küçükler) kişisel verilerinin
+işlenmesi için ebeveynlerden birinin ya da yasal velinin özel onayı
+gerekir (LGPD md. 14). Brezilya'da 12 yaşından küçükseniz izin ekranında "Kabul Et"i yalnızca
+ebeveyninizin onayıyla seçin, aksi hâlde "Reddet"i seçin.
 
 13 yaş altındaki bir çocuğun liderlik tablosuna veri gönderdiğini
 düşünüyorsanız keremikogames@gmail.com adresine yazın; ilgili kaydı
@@ -360,10 +385,12 @@ shared.
   as the advertising ID.
 - The "Remove Ads" purchase is made through Google Play or the App Store.
   We never see your payment details.
-- The **DATA SHARING** button in Settings turns off gameplay statistics
-  (and, in Europe and Brazil, personalized ads). Leaderboards, crash reports and
-  remote settings are needed for the game to work and run independently
-  of this button.
+- The **DATA SHARING** button in Settings turns off gameplay statistics;
+  in the countries where the consent screen is shown (European Union /
+  European Economic Area, United Kingdom, Switzerland and Brazil) it also
+  turns off personalized ads. Leaderboards, crash reports, remote settings
+  and purchase verification are needed for the game to work and run
+  independently of this button.
 
 ## Data that stays on your device
 
@@ -390,7 +417,7 @@ use your real name.
 Leaderboard data is independent of the **DATA SHARING** button: it is
 sent even when the button is off and even if you did not give consent on
 the consent screen, because the leaderboards need it to work.
-Unity privacy policy: https://unity.com/legal/privacy-policy
+Unity privacy policy: https://unity.com/legal/game-player-and-app-user-privacy-policy
 
 ## Remote settings (Unity Remote Config)
 
@@ -414,9 +441,12 @@ the cause. The report contains:
   occurred),
 - technical information such as device model, operating system version
   and game version, and performance measurements,
-- a random installation ID that Unity assigns to this installation.
+- a random installation ID that Unity assigns to this installation,
+- the last few technical log lines the game wrote just before the error.
 
-These reports do not contain your name or contact details. Unity keeps
+These reports do not contain contact details such as an email address or
+phone number. However, the log lines may include your anonymous player ID
+and the player name you entered in the game. Unity keeps
 this data for 90 days by default
 (https://docs.unity.com/en-us/cloud/developer-data/privacy-overview).
 
@@ -435,20 +465,28 @@ service:
 - deaths: the level, the cause of death (archer, soldier, trap type,
   fall) and the position in the level,
 - level time, gold collected, skill use,
-- shop purchases made with in-game gold and the "continue" choice on the
-  death screen.
+- shop purchases made with in-game gold or by watching an ad, and the
+  "continue" choice on the death screen,
+- the "Remove Ads" purchase (product, price, transaction number and store
+  receipt; this is sent by Unity In-App Purchasing).
 
-Along with this, Unity Analytics itself processes an anonymous player ID,
-device model, operating system, game version, session start and end
-times, and the country derived from your IP address. This data does not
-include your name or contact details. It is not used for advertising and
-is not sold. Raw data is kept for 13 months and then deleted.
+Along with this, Unity Analytics automatically processes: your IP address
+(to determine your country), a random installation ID that Unity assigns
+to this installation, your anonymous player ID (the same one used for the
+leaderboards), a device identifier (IDFV on iOS; on Android, a value
+derived from the device's Android ID), device model, operating system,
+device language, processor, memory, screen and graphics information,
+battery and volume level, game version, and session start and end times.
+This data does not include your name or contact details. It is not used
+for advertising and is not sold. Raw data is kept for 13 months and then
+deleted.
 
 **Turning it off:** You can stop this collection at any time with the
 **DATA SHARING** button in the Settings screen. In the European Union /
-European Economic Area, the United Kingdom, Switzerland and Brazil,
-statistics are collected only if you give consent on the consent screen shown at
-first launch.
+European Economic Area, the United Kingdom, Switzerland and Brazil (and
+if the game cannot determine your country), statistics are collected only
+if you give consent: on the consent screen at first launch or later with
+the **DATA SHARING** button.
 
 ## Advertising
 
@@ -473,9 +511,11 @@ personalized ads and gameplay statistics on first launch; the ad system
 is not started until you decide. You can change your choice at any time
 with the **DATA SHARING** button in the Settings screen.
 If you do not consent, ads are shown without personalization and no
-gameplay statistics are collected. To decide whether to show the consent screen, the game
-reads your SIM card or mobile network country code and device language
-on the device itself. This information is not sent anywhere. In other
+gameplay statistics are collected. To decide whether to show the consent
+screen, the game reads, on the device itself, your SIM card or mobile
+network country code on Android or, if these are unavailable (and on
+iOS), your device's language and region setting. This information is
+not sent anywhere. In other
 countries the consent screen is not shown and ads may be personalized;
 you can limit this with the device settings below.
 
@@ -501,14 +541,15 @@ details. To verify that a purchase belongs to you, the purchase record
 sent by the store (order number, product, date) is processed on your
 device with Unity In-App Purchasing. As part of its purchasing service,
 Unity In-App Purchasing also sends this purchase record and device
-information to Unity Technologies. Payments are governed by Google's
+information to Unity Technologies; this is independent of the **DATA
+SHARING** button. Payments are governed by Google's
 (https://policies.google.com/privacy) or Apple's
 (https://www.apple.com/legal/privacy/) privacy policy.
 
 ## Notifications
 
 The game schedules local notifications on your device to let you know
-when your daily rewards are refreshed. Notifications are created on your
+when your daily wheel spin, quests and rewards are refreshed. Notifications are created on your
 device itself; no data is sent to any server for this and no remote
 (push) notifications are used. You can turn notifications off in the
 Settings screen or in your device's notification settings.
@@ -612,36 +653,42 @@ have the right to:
 
 **How to use them:**
 
-- Withdrawing consent and objecting to statistics: the **DATA SHARING**
-  button in Settings.
-- Deleting your data: the **DELETE MY DATA** button in Settings. After you
+- **Withdrawing consent and objecting to statistics:** the **DATA
+  SHARING** button in Settings.
+- **Correcting your player name:** the in-game name screen.
+- **Deletion:** the **DELETE MY DATA** button in Settings. After you
   confirm, this button:
-  - asks Unity Analytics to delete your gameplay statistics from its
-    servers and stops statistics collection,
+  - if statistics were ever collected on this device, asks Unity Analytics
+    to delete them from its servers,
   - deletes your anonymous player account (your player ID) at Unity,
-  - deletes all game data on your device (progress, gold, items, settings,
-    consent and data sharing choices).
+  - deletes the game data on your device (progress, gold, items, player
+    name, settings, consent choice).
 
   If there is no internet connection, nothing is deleted. Your "Remove
   Ads" purchase stays with your Google Play or App Store account and can
-  be restored. Your times and scores on the leaderboards are not deleted
-  by this button; if you want them deleted too, before pressing the button
-  write to the address below with the name shown on the leaderboards
-  together with the "#" number at the end (e.g. Kai#1234). There is no way
-  to delete crash reports in the game; Unity deletes them after 90 days by
-  default.
-- Correcting your player name: the in-game name screen.
-- For all other requests, write to keremikogames@gmail.com. You can also
-  send a deletion request by email: if you want your leaderboard record
-  and anonymous player ID deleted, include the name shown on the
-  leaderboards together with the "#" number at the end (e.g. Kai#1234);
-  we delete the record with Unity's tools.
-- Gameplay statistics and crash reports are linked not to your name but
-  to random IDs that the game does not show you. We may therefore be
-  unable to match a request sent by email to this data; if we cannot, we
-  will tell you. Because the **DELETE MY DATA** button requests deletion
-  of statistics with the ID on your device, this limit does not apply to
-  statistics deleted with the button; it does apply to crash reports.
+  be restored. Because your choices are deleted too, the game behaves like
+  a fresh install the next time it starts: in the countries where the
+  consent screen is shown, you are asked for consent again. In other
+  countries, if you had turned **DATA SHARING** off, that choice is kept;
+  if it was on, it stays on.
+
+  This button does **not** delete:
+  - **Leaderboard records** (times, scores and display name). If you want
+    them deleted, before pressing the button write to
+    keremikogames@gmail.com with the name shown on the leaderboards
+    together with the "#" number at the end (e.g. Kai#1234).
+  - **Crash reports:** there is no way to delete them in the game; Unity
+    deletes them after 90 days by default.
+- **Requests by email:** for access, copy, correction, deletion,
+  restriction and portability requests, write to keremikogames@gmail.com.
+  If you want your leaderboard record and anonymous player ID deleted,
+  include the name shown on the leaderboards together with the "#" number;
+  we delete the record with Unity's tools. Gameplay statistics and crash
+  reports are linked not to your name but to random IDs that the game does
+  not show you; we may be unable to match a request sent by email to this
+  data, and if we cannot, we will tell you. For your statistics, use the
+  **DELETE MY DATA** button: it sends the deletion request with the ID on
+  your device.
 - You can also delete the data on your device by uninstalling the app.
 - For data processed by our advertising partners, use the options
   described in the advertising privacy policy above and your device's ad
@@ -658,6 +705,12 @@ and 16 (e.g. 16 in Germany); in the United Kingdom it is 13. If you are
 under that age in your country, choose "Accept" on the consent screen
 only with your parent's permission; otherwise choose "Decline".
 Declining does not stop you from playing the game.
+
+In Brazil, processing the personal data of children (under 12) requires
+the specific consent of at least one parent or legal guardian (LGPD
+Art. 14). If you are in Brazil and under 12, choose "Accept" on the
+consent screen only with your parent's permission; otherwise choose
+"Decline".
 
 If you believe a child under 13 has sent data to the leaderboards, write
 to keremikogames@gmail.com and we will delete the record.
