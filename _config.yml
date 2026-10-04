@@ -7,8 +7,8 @@ contact_email: "keremikogames@gmail.com"
 # yazan, tiklanmayan kutu olarak cizilir; link girilince otomatik gercek link olur.
 # Iki nokta iceren her deger TIRNAK icinde olmali (ilk Pages derlemesi bu yuzden dustu).
 store:
-  google_play: ""   # canli olunca: "https://play.google.com/store/apps/details?id=com.keremikogames.kai"
-  app_store: ""     # canli olunca: App Store Connect'teki "https://apps.apple.com/..." adresi
+  google_play: "https://play.google.com/store/apps/details?id=com.keremikogames.kai"
+  app_store: "https://apps.apple.com/app/id6813983136"   # ASC uygulama Apple ID'si
 
 exclude:
   - README.md

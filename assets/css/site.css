@@ -74,6 +74,11 @@ a.store:hover{filter:brightness(1.05);color:var(--cta-yazi)}
 .shot-grid img{width:100%;border-radius:14px;border:3px solid var(--kontur)}
 .shot-grid .shot-main{grid-column:1/-1}
 
+.faq details{border-top:2px solid rgba(221,170,71,.35)}
+.faq details:first-child{border-top:0}
+.faq summary{display:flex;align-items:center;min-height:48px;padding:8px 0;cursor:pointer;font-weight:800;color:var(--altin)}
+.faq details p{margin:0 0 12px}
+
 .contact{text-align:center}
 .btn-mail{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border-radius:14px;
   border:3px solid var(--kontur);background:linear-gradient(var(--cta1),var(--cta2));color:var(--cta-yazi);font-weight:800;text-decoration:none;box-shadow:0 3px 0 var(--kontur)}
