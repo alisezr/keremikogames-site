@@ -229,3 +229,6 @@ videoheroes.tv, 212550, RESELLER, 064bc410192443d8
 xandr.com, 13923, RESELLER
 xandr.com, 16856, RESELLER
 zmaticoo.com, 5135703, RESELLER
+
+# Google AdMob - yayinci kimligi: AdMob > Uygulama dogrulama (2026-10-08)
+google.com, pub-6691697568078050, DIRECT, f08c47fec0942fa0
