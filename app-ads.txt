@@ -232,3 +232,6 @@ zmaticoo.com, 5135703, RESELLER
 
 # Google AdMob - yayinci kimligi: AdMob > Uygulama dogrulama (2026-10-08)
 google.com, pub-6691697568078050, DIRECT, f08c47fec0942fa0
+
+# Liftoff Monetize (eski Vungle) - Account ID: Liftoff > Overview (2026-10-09)
+vungle.com, 6ac88e97fb6acbb421dcef7c, DIRECT, c107d686becd2d77
