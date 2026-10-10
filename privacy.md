@@ -9,7 +9,7 @@ permalink: /privacy/
 
 **Geliştirici ve veri sorumlusu:** Keremiko Games (Ali Sezer)
 **İletişim:** keremikogames@gmail.com
-**Son güncelleme:** 2026-10-02
+**Son güncelleme:** 2026-10-11
 
 Bu politika, Google Play ve App Store'da yayınlanan "Kai: Kayıp Madalyon"
 oyununun hangi verileri işlediğini, neden işlediğini ve kimlerle
@@ -129,9 +129,11 @@ açılıştaki izin ekranında ya da sonradan **VERİ PAYLAŞIMI** düğmesiyle.
 ## Reklamlar
 
 Oyun, Unity LevelPlay (ironSource) reklam platformu aracılığıyla reklam
-gösterir. Reklamlar Unity Ads ve ironSource reklam ağlarından gelir. Bu
-iş ortakları reklamları seçmek, göstermek, performanslarını ölçmek ve
-sahtekârlığı önlemek için şu verileri işleyebilir:
+gösterir. Reklamlar Unity Ads, ironSource, Liftoff ve Google AdMob reklam
+ağlarından gelir. Google AdMob reklamları Avrupa Ekonomik Alanı, Birleşik
+Krallık ve İsviçre'de gösterilmez. Bu iş ortakları reklamları seçmek,
+göstermek, performanslarını ölçmek ve sahtekârlığı önlemek için şu
+verileri işleyebilir:
 
 - reklam kimliği (Android Advertising ID / iOS IDFA) ve diğer cihaz
   tanımlayıcıları,
@@ -168,8 +170,13 @@ izin vermezseniz reklam kimliği (IDFA) kullanılmaz ve reklamlar
 kişiselleştirilmeden gösterilir. Bu izni istediğiniz zaman iPhone
 Ayarlar > Gizlilik ve Güvenlik > Takip bölümünden değiştirebilirsiniz.
 
-Reklam iş ortağının gizlilik politikası (Unity Ads, ironSource ve LevelPlay
-için geçerlidir): https://unity.com/legal/game-player-and-app-user-privacy-policy
+Reklam iş ortaklarının gizlilik politikaları:
+
+- Unity Ads, ironSource ve LevelPlay: https://unity.com/legal/game-player-and-app-user-privacy-policy
+- Liftoff: https://liftoff.io/privacy-policy/
+- Google AdMob: https://policies.google.com/privacy (Google'ın, hizmetlerini
+  kullanan uygulamalardan gelen bilgileri nasıl kullandığı:
+  https://policies.google.com/technologies/partner-sites)
 
 ## Uygulama içi satın alma
 
@@ -245,8 +252,9 @@ yer alır.
 
 ## Yurt dışına aktarım
 
-İş ortaklarımız (Unity, Google, Apple; ironSource bir Unity şirketidir)
-verileri ABD dahil, bulunduğunuz ülkenin dışındaki ülkelerde işleyebilir.
+İş ortaklarımız (Unity, Google, Apple, Liftoff; ironSource bir Unity
+şirketidir) verileri ABD dahil, bulunduğunuz ülkenin dışındaki ülkelerde
+işleyebilir.
 Avrupa Birliği / Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'den
 yapılan aktarımlar için:
 
@@ -255,6 +263,9 @@ yapılan aktarımlar için:
   https://unity.com/legal/game-player-and-app-user-privacy-policy).
 - Google, Standart Sözleşme Maddelerine ve AB-ABD Veri Gizliliği
   Çerçevesi'ne dayanır (https://policies.google.com/privacy/frameworks).
+- Liftoff, Avrupa Komisyonu'nun Standart Sözleşme Maddelerini kullanır ve
+  AB-ABD Veri Gizliliği Çerçevesi'ne (Birleşik Krallık eki ve İsviçre-ABD
+  çerçevesi dahil) katılmıştır (https://liftoff.io/privacy-policy/).
 - Apple, Standart Sözleşme Maddelerine dayanır
   (https://www.apple.com/legal/privacy/).
 
@@ -365,7 +376,7 @@ Sorularınız için: keremikogames@gmail.com
 
 **Developer and data controller:** Keremiko Games (Ali Sezer)
 **Contact:** keremikogames@gmail.com
-**Last updated:** 2026-10-02
+**Last updated:** 2026-10-11
 
 This policy explains what data the game "Kai: Medallion Chase", published
 on Google Play and the App Store, processes, why, and with whom it is
@@ -491,9 +502,10 @@ the **DATA SHARING** button.
 ## Advertising
 
 The game shows ads through the Unity LevelPlay (ironSource) advertising
-platform. Ads are served by the Unity Ads and ironSource ad networks.
-These partners may process the following data to select, show and
-measure ads and to prevent fraud:
+platform. Ads are served by the Unity Ads, ironSource, Liftoff and Google
+AdMob ad networks. Google AdMob ads are not shown in the European Economic
+Area, the United Kingdom or Switzerland. These partners may process the
+following data to select, show and measure ads and to prevent fraud:
 
 - the advertising ID (Android Advertising ID / iOS IDFA) and other device
   identifiers,
@@ -530,8 +542,13 @@ the advertising ID (IDFA) is not used and ads are shown without
 personalization. You can change this any time in iPhone Settings >
 Privacy & Security > Tracking.
 
-Advertising partner privacy policy (covers Unity Ads, ironSource and
-LevelPlay): https://unity.com/legal/game-player-and-app-user-privacy-policy
+Advertising partner privacy policies:
+
+- Unity Ads, ironSource and LevelPlay: https://unity.com/legal/game-player-and-app-user-privacy-policy
+- Liftoff: https://liftoff.io/privacy-policy/
+- Google AdMob: https://policies.google.com/privacy (how Google uses
+  information from apps that use its services:
+  https://policies.google.com/technologies/partner-sites)
 
 ## In-app purchases
 
@@ -609,9 +626,9 @@ Protection Law (LGPD).
 
 ## International transfers
 
-Our partners (Unity, Google, Apple; ironSource is a Unity company) may
-process data in countries outside the one you live in, including the
-United States. For transfers from the European Union / European Economic
+Our partners (Unity, Google, Apple, Liftoff; ironSource is a Unity
+company) may process data in countries outside the one you live in,
+including the United States. For transfers from the European Union / European Economic
 Area, the United Kingdom and Switzerland:
 
 - Unity uses the European Commission's Standard Contractual Clauses and
@@ -619,6 +636,9 @@ Area, the United Kingdom and Switzerland:
   https://unity.com/legal/game-player-and-app-user-privacy-policy).
 - Google relies on Standard Contractual Clauses and the EU-U.S. Data
   Privacy Framework (https://policies.google.com/privacy/frameworks).
+- Liftoff uses the European Commission's Standard Contractual Clauses and
+  participates in the EU-U.S. Data Privacy Framework (including the UK
+  Extension and the Swiss-U.S. framework) (https://liftoff.io/privacy-policy/).
 - Apple relies on Standard Contractual Clauses
   (https://www.apple.com/legal/privacy/).
 

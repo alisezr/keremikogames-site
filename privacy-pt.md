@@ -13,7 +13,7 @@ permalink: /privacy/pt/
 
 **Desenvolvedor e controlador dos dados:** Keremiko Games (Ali Sezer)
 **Contato:** keremikogames@gmail.com
-**Última atualização:** 2 de outubro de 2026
+**Última atualização:** 11 de outubro de 2026
 
 Esta política explica quais dados o jogo "Kai: Medallion Chase",
 publicado no Google Play e na App Store, trata, por que os trata e com
@@ -148,9 +148,10 @@ primeira abertura ou depois, com o botão **ENVIO DE DADOS**.
 
 O jogo exibe anúncios por meio da plataforma de publicidade Unity
 LevelPlay (ironSource). Os anúncios são veiculados pelas redes de
-anúncios Unity Ads e ironSource. Esses parceiros podem tratar os
-seguintes dados para selecionar, exibir e medir anúncios e para prevenir
-fraudes:
+anúncios Unity Ads, ironSource, Liftoff e Google AdMob. Os anúncios do
+Google AdMob não são exibidos no Espaço Econômico Europeu, no Reino Unido
+nem na Suíça. Esses parceiros podem tratar os seguintes dados para
+selecionar, exibir e medir anúncios e para prevenir fraudes:
 
 - o ID de publicidade (Android Advertising ID / iOS IDFA) e outros
   identificadores do dispositivo,
@@ -191,8 +192,13 @@ usado e os anúncios são exibidos sem personalização. Você pode alterar
 isso a qualquer momento em Ajustes do iPhone > Privacidade e Segurança >
 Rastreamento.
 
-Política de privacidade do parceiro de publicidade (abrange Unity Ads,
-ironSource e LevelPlay): https://unity.com/legal/game-player-and-app-user-privacy-policy
+Políticas de privacidade dos parceiros de publicidade:
+
+- Unity Ads, ironSource e LevelPlay: https://unity.com/legal/game-player-and-app-user-privacy-policy
+- Liftoff: https://liftoff.io/privacy-policy/
+- Google AdMob: https://policies.google.com/privacy (como o Google usa as
+  informações de apps que utilizam seus serviços:
+  https://policies.google.com/technologies/partner-sites)
 
 ## Compras no aplicativo
 
@@ -277,8 +283,8 @@ Geral de Proteção de Dados (LGPD) do Brasil.
 
 ## Transferências internacionais
 
-Nossos parceiros (Unity, Google, Apple; a ironSource é uma empresa da
-Unity) podem tratar dados em países diferentes daquele em que você mora,
+Nossos parceiros (Unity, Google, Apple, Liftoff; a ironSource é uma
+empresa da Unity) podem tratar dados em países diferentes daquele em que você mora,
 incluindo os Estados Unidos. Para transferências a partir da União
 Europeia / Espaço Econômico Europeu, do Reino Unido e da Suíça:
 
@@ -287,6 +293,10 @@ Europeia / Espaço Econômico Europeu, do Reino Unido e da Suíça:
   https://unity.com/legal/game-player-and-app-user-privacy-policy).
 - O Google se baseia em Cláusulas Contratuais Padrão e no EU-U.S. Data
   Privacy Framework (https://policies.google.com/privacy/frameworks).
+- A Liftoff usa as Cláusulas Contratuais Padrão da Comissão Europeia e
+  participa do EU-U.S. Data Privacy Framework (incluindo a extensão do
+  Reino Unido e o Swiss-U.S. Data Privacy Framework)
+  (https://liftoff.io/privacy-policy/).
 - A Apple se baseia em Cláusulas Contratuais Padrão
   (https://www.apple.com/legal/privacy/).
 
