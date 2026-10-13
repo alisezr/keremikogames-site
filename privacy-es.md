@@ -13,7 +13,7 @@ permalink: /privacy/es/
 
 **Desarrollador y responsable del tratamiento:** Keremiko Games (Ali Sezer)
 **Contacto:** keremikogames@gmail.com
-**Última actualización:** 11 de octubre de 2026
+**Última actualización:** 13 de octubre de 2026
 
 Esta política explica qué datos trata el juego "Kai: Medallion Chase",
 publicado en Google Play y en el App Store, por qué los trata y con quién
@@ -407,6 +407,16 @@ con el permiso de su padre o su madre; de lo contrario, elija
 Si cree que un niño menor de 13 años ha enviado datos a las tablas de
 clasificación, escriba a keremikogames@gmail.com y eliminaremos el
 registro.
+
+## Sitio web (keremikogames.com)
+
+Usamos GoatCounter para saber cuántas veces se visita este sitio web
+(interés legítimo). GoatCounter no usa cookies y no le rastrea entre
+sitios. Solo se registran como estadísticas agregadas la página visitada,
+la dirección de procedencia, el tipo de navegador y sistema operativo, el
+tamaño de pantalla y el país deducido de su dirección IP; su dirección IP
+no se guarda. El juego en sí no usa GoatCounter. Más información:
+https://www.goatcounter.com/help/privacy
 
 ## Cambios
 
