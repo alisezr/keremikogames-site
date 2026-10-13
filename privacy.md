@@ -9,7 +9,7 @@ permalink: /privacy/
 
 **Geliştirici ve veri sorumlusu:** Keremiko Games (Ali Sezer)
 **İletişim:** keremikogames@gmail.com
-**Son güncelleme:** 2026-10-11
+**Son güncelleme:** 2026-10-13
 
 Bu politika, Google Play ve App Store'da yayınlanan "Kai: Kayıp Madalyon"
 oyununun hangi verileri işlediğini, neden işlediğini ve kimlerle
@@ -361,6 +361,16 @@ ebeveyninizin onayıyla seçin, aksi hâlde "Reddet"i seçin.
 düşünüyorsanız keremikogames@gmail.com adresine yazın; ilgili kaydı
 sileriz.
 
+## Web sitesi (keremikogames.com)
+
+Bu sitenin kaç kez ziyaret edildiğini görmek için GoatCounter kullanıyoruz
+(meşru menfaat). GoatCounter çerez kullanmaz ve sizi siteler arasında
+izlemez. Yalnız ziyaret edilen sayfa, sizi siteye yönlendiren adres,
+tarayıcı ve işletim sistemi türü, ekran boyutu ve IP adresinden çıkarılan
+ülke toplu istatistik olarak kaydedilir; IP adresiniz saklanmaz. Oyunun
+kendisi GoatCounter kullanmaz. Ayrıntılar:
+https://www.goatcounter.com/help/privacy
+
 ## Değişiklikler
 
 Bu politika güncellendiğinde bu sayfada yeni tarihle yayınlanır.
@@ -376,7 +386,7 @@ Sorularınız için: keremikogames@gmail.com
 
 **Developer and data controller:** Keremiko Games (Ali Sezer)
 **Contact:** keremikogames@gmail.com
-**Last updated:** 2026-10-11
+**Last updated:** 2026-10-13
 
 This policy explains what data the game "Kai: Medallion Chase", published
 on Google Play and the App Store, processes, why, and with whom it is
@@ -734,6 +744,16 @@ consent screen only with your parent's permission; otherwise choose
 
 If you believe a child under 13 has sent data to the leaderboards, write
 to keremikogames@gmail.com and we will delete the record.
+
+## Website (keremikogames.com)
+
+We use GoatCounter to see how often this website is visited (legitimate
+interest). GoatCounter does not use cookies and does not track you across
+sites. Only the page visited, the referring address, the browser and
+operating system type, the screen size and the country derived from your
+IP address are recorded as aggregate statistics; your IP address is not
+stored. The game itself does not use GoatCounter. Details:
+https://www.goatcounter.com/help/privacy
 
 ## Changes
 
