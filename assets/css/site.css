@@ -117,3 +117,7 @@ a.store:hover{filter:brightness(1.05);color:var(--cta-yazi)}
   .store-name{font-size:1.05rem}
   .store-note{font-size:.75rem;letter-spacing:.02em;padding:4px 6px}
 }
+
+/* Basin kiti (/presskit/) — prose kabugu + bilgi tablosu ve ekran goruntusu izgarasi */
+.presskit th{white-space:nowrap;text-align:left;vertical-align:top;color:var(--altin)}
+.presskit .shot-grid{margin:0 0 1em}
