@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keremikogames.com/sitemap.xml
