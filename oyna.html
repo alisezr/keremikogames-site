@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kai: Kayıp Madalyon</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#2A1C13;color:#FFE4B8;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;padding:16px;box-sizing:border-box}
+img{width:96px;height:96px;border-radius:22px}
+a.b{display:block;margin:12px auto 0;max-width:260px;padding:14px 18px;border-radius:12px;background:#FFE4B8;color:#2A1C13;font-weight:700;text-decoration:none}
+</style>
+<script>
+/* Tek link: Android -> Google Play, iPhone/iPad -> App Store, diger -> ana sayfa.
+   Kaynak ?k= ile verilir (varsayilan instagram). Play'de utm_source, App Store'da ct olarak gider. */
+(function(){
+  var k=(new URLSearchParams(location.search).get('k')||'instagram').toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,30)||'instagram';
+  var play='https://play.google.com/store/apps/details?id=com.keremikogames.kai&utm_source='+k+'&utm_medium=social&utm_campaign=profil';
+  var ios='https://apps.apple.com/app/apple-store/id6813983136?pt=129484038&ct='+k+'&mt=8';
+  var ua=navigator.userAgent||'';
+  var iPadOS=/Macintosh/.test(ua)&&navigator.maxTouchPoints>1;
+  var hedef=/Android/i.test(ua)?play:(/iPhone|iPad|iPod/i.test(ua)||iPadOS)?ios:null;
+  window.__kai={play:play,ios:ios};
+  if(hedef)location.replace(hedef);
+})();
+</script>
+</head>
+<body>
+<main>
+<img src="/assets/img/icon-180.png" alt="Kai: Kayıp Madalyon">
+<h1 style="font-size:22px;margin:16px 0 4px">Kai: Kayıp Madalyon</h1>
+<p style="margin:0 0 8px;opacity:.85">Ücretsiz indir</p>
+<a class="b" id="p" href="https://play.google.com/store/apps/details?id=com.keremikogames.kai&amp;utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=profil">Google Play</a>
+<a class="b" id="a" href="https://apps.apple.com/app/apple-store/id6813983136?pt=129484038&amp;ct=instagram&amp;mt=8">App Store</a>
+</main>
+<script>
+if(window.__kai){document.getElementById('p').href=__kai.play;document.getElementById('a').href=__kai.ios;}
+</script>
+</body>
+</html>
