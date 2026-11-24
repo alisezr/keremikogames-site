@@ -6,7 +6,7 @@ title_en: "Kai: Medallion Chase — Ninja Platformer for Android & iOS"
 title_es: "Kai: Medallion Chase — KeremikoGames"
 title_pt: "Kai: Medallion Chase — KeremikoGames"
 title_de: "Kai: Medallion Chase — KeremikoGames"
-description: "Kai: Medallion Chase (Kai: Kayıp Madalyon) is a hard but fair 2D ninja platformer for Android and iOS. Ücretsiz, Türkçe seslendirmeli ninja platform oyunu."
+description: "Kai: Medallion Chase (Kai: Kayıp Madalyon) is a hard but fair 2D ninja platformer for Android and iOS: three worlds, three playable heroes, 90 handcrafted levels and fully voiced cinematics. Ücretsiz, Türkçe seslendirmeli ninja platform oyunu: üç dünya, üç kahraman, 90 bölüm."
 lang_toggle: true
 body_class: home
 ---
@@ -22,11 +22,11 @@ body_class: home
       <img lang="de" src="{{ '/assets/img/logo-en.webp' | relative_url }}" width="720" height="354" alt="Kai: Medallion Chase" loading="lazy">
     </h1>
     <p class="tagline">
-      <span lang="tr">Bu oyun korkaklara göre değil. Kanyonu aş, madalyonun izini sür, adını liderlik tablosunun zirvesine yazdır.</span>
-      <span lang="en">Not for the faint of heart. Conquer the canyon, chase the medallion and put your name at the top of the leaderboard.</span>
-      <span lang="es">No apto para cardíacos. Conquista el cañón, sigue la pista del medallón y pon tu nombre en la cima de la clasificación.</span>
-      <span lang="pt">Não é para os fracos. Vença o cânion, siga o rastro do medalhão e coloque seu nome no topo do ranking.</span>
-      <span lang="de">Nichts für schwache Nerven. Bezwinge die Schlucht, jag das Medaillon und schreib deinen Namen ganz oben in die Bestenliste.</span>
+      <span lang="tr">Bu oyun korkaklara göre değil. Kanyondan tropik adalara, oradan çölün kara piramidine: üç dünya, üç kahraman, 90 bölüm.</span>
+      <span lang="en">Not for the faint of heart. From the canyon to tropical islands to the desert's black pyramid: three worlds, three heroes, 90 levels.</span>
+      <span lang="es">No apto para cardíacos. Del cañón a las islas tropicales y a la pirámide negra del desierto: tres mundos, tres héroes, 90 niveles.</span>
+      <span lang="pt">Não é para os fracos. Do cânion às ilhas tropicais e à pirâmide negra do deserto: três mundos, três heróis, 90 fases.</span>
+      <span lang="de">Nichts für schwache Nerven. Von der Schlucht über tropische Inseln bis zur schwarzen Pyramide der Wüste: drei Welten, drei Helden, 90 Level.</span>
     </p>
     <div class="stores">
       {%- if play != "" -%}
@@ -41,88 +41,134 @@ body_class: home
       {%- endif -%}
     </div>
   </div>
-  <div class="hero-art">
-    <img src="{{ '/assets/img/hero-kai.webp' | relative_url }}" width="544" height="500" alt="">
+  <div class="hero-art hero-banner">
+    <picture>
+      <source media="(max-width:700px)" srcset="{{ '/assets/img/hero-uclu-dar.webp' | relative_url }}" width="1280" height="723">
+      <img src="{{ '/assets/img/hero-uclu.webp' | relative_url }}" width="2160" height="913" alt="Kai, Rohin ve Velmor / Kai, Rohin and Velmor">
+    </picture>
   </div>
 </section>
 
 <section class="card about">
-  <h2><span lang="tr">Kanyon affetmez</span><span lang="en">The canyon shows no mercy</span><span lang="es">El cañón no perdona</span><span lang="pt">O cânion não perdoa</span><span lang="de">Die Schlucht kennt keine Gnade</span></h2>
-  <p lang="tr">Bir sabah madalyon yerinde yoktu. Geriye yalnızca çocukluktan kalma eski bir işaret kalmıştı — ve iz, kanyonun derinliklerine uzanıyor. Önünde kaktüsler, çöken kayalar, testereler ve pusuda bekleyen okçular var. Geri dönüş yok.</p>
-  <p lang="en">One morning, the medallion was gone. All that was left was an old mark from childhood — and a trail leading deep into the canyon. Cacti, crumbling rocks, saw blades and archers lie in wait. There's no turning back.</p>
-  <p lang="es">Una mañana, el medallón había desaparecido. Solo quedaba una vieja marca de la infancia… y un rastro que se adentra en lo más profundo del cañón. Cactus, rocas que se derrumban, sierras y arqueros te esperan al acecho. No hay vuelta atrás.</p>
-  <p lang="pt">Uma manhã, o medalhão tinha sumido. Só restou uma velha marca de infância — e um rastro que leva às profundezas do cânion. Cactos, rochas que desabam, serras e arqueiros estão à espreita. Não tem volta.</p>
-  <p lang="de">Eines Morgens war das Medaillon verschwunden. Zurück blieb nur ein altes Zeichen aus Kindertagen – und eine Spur, die tief in die Schlucht führt. Kakteen, einstürzende Felsen, Sägeblätter und Bogenschützen lauern auf dich. Es gibt kein Zurück.</p>
+  <h2><span lang="tr">Üç dünya, üç kahraman</span><span lang="en">Three worlds, three heroes</span><span lang="es">Tres mundos, tres héroes</span><span lang="pt">Três mundos, três heróis</span><span lang="de">Drei Welten, drei Helden</span></h2>
+  <p lang="tr">Bir sabah madalyon yerinde yoktu. Geriye yalnızca çocukluk arkadaşın Rohin'in kayaya kazıdığı o eski işaret kaldı. İz seni kanyonun derinliklerine, oradan tropik adalara ve piramitlerle dolu çöle götürüyor. Testereler, alevler, batan kum ve pusuda bekleyen düşmanlar yolunu kesiyor. Geri dönüş yok.</p>
+  <p lang="en">One morning, the medallion was gone. All that was left was the old mark your childhood friend Rohin carved into the rock. The trail leads deep into the canyon, then on to tropical islands and a desert full of pyramids. Saw blades, flames, quicksand and lurking enemies stand in your way. There's no turning back.</p>
+  <p lang="es">Una mañana, el medallón había desaparecido. Solo quedó la vieja marca que tu amigo de la infancia, Rohin, grabó en la roca. La pista te lleva a lo más profundo del cañón y, de ahí, a islas tropicales y a un desierto lleno de pirámides. Sierras, llamas, arenas movedizas y enemigos al acecho te cierran el paso. No hay vuelta atrás.</p>
+  <p lang="pt">Certa manhã, o medalhão tinha sumido. Só restou a velha marca que Rohin, seu amigo de infância, gravou na rocha. A pista leva ao fundo do cânion e, de lá, a ilhas tropicais e a um deserto cheio de pirâmides. Serras, chamas, areia movediça e inimigos à espreita bloqueiam o caminho. Não tem volta.</p>
+  <p lang="de">Eines Morgens war das Medaillon verschwunden. Zurück blieb nur das alte Zeichen, das dein Kindheitsfreund Rohin in den Fels geritzt hat. Die Spur führt tief in die Schlucht, dann zu tropischen Inseln und in eine Wüste voller Pyramiden. Sägen, Flammen, Treibsand und lauernde Gegner versperren dir den Weg. Es gibt kein Zurück.</p>
   <p lang="tr">Zor mu? Evet. Haksız mı? Asla. Düş, kalk, tekrar dene — o bölümü sonunda geçtiğinde zafer tamamen senin.</p>
   <p lang="en">Hard? Absolutely. Unfair? Never. Fall, get up, try again — and when you finally clear it, the win is all yours.</p>
   <p lang="es">¿Difícil? Totalmente. ¿Injusto? Jamás. Cae, levántate, inténtalo de nuevo… y cuando por fin lo superes, la victoria será toda tuya.</p>
   <p lang="pt">Difícil? Com certeza. Injusto? Nunca. Caia, levante, tente de novo — e quando finalmente passar, a vitória é toda sua.</p>
   <p lang="de">Schwer? Absolut. Unfair? Niemals. Fall hin, steh auf, versuch's nochmal – und wenn du es endlich schaffst, gehört der Sieg ganz dir.</p>
+  <p lang="tr">Yolda yalnız değilsin. Kai'nin katanası ve ninja yeteneklerinin yanına Rohin'in kılıcı ve kalkanı, Velmor'un yıldırımları ve portalı katılıyor. Hikayenin bütün sinematikleri Türkçe dahil beş dilde baştan sona seslendirildi.</p>
+  <p lang="en">You're not alone on the road. Kai's katana and ninja skills are joined by Rohin's sword and shield and Velmor's lightning and portals. Every cinematic in the story is fully voiced in five languages.</p>
+  <p lang="es">No estás solo en el camino. A la katana y las habilidades ninja de Kai se suman la espada y el escudo de Rohin y los rayos y portales de Velmor. Todas las cinemáticas de la historia tienen voces en cinco idiomas, incluido el español.</p>
+  <p lang="pt">Você não está sozinho na jornada. A katana e as habilidades ninja de Kai ganham a companhia da espada e do escudo de Rohin e dos raios e portais de Velmor. Todas as cinemáticas da história são dubladas em cinco idiomas, inclusive em português.</p>
+  <p lang="de">Du bist nicht allein unterwegs. Zu Kais Katana und Ninja-Fähigkeiten kommen Rohins Schwert und Schild und Velmors Blitze und Portale. Alle Zwischensequenzen der Geschichte sind in fünf Sprachen vertont, auch auf Deutsch.</p>
   <p lang="tr">Bölümü bitirmek sadece başlangıç. Her bölümün kendi dünya rekor tablosu var: saliseleri kazı, rakiplerini geride bırak, zirveye yerleş.</p>
   <p lang="en">Finishing a level is only the beginning. Every level has its own world record table — shave off every hundredth of a second, leave your rivals behind and claim the top spot.</p>
   <p lang="es">Terminar un nivel es solo el comienzo. Cada nivel tiene su propia tabla de récords mundiales: recorta cada centésima de segundo, deja atrás a tus rivales y quédate con el primer lugar.</p>
   <p lang="pt">Terminar a fase é só o começo. Cada fase tem sua própria tabela de recordes mundiais: corte cada centésimo de segundo, deixe os rivais para trás e conquiste o topo.</p>
   <p lang="de">Ein Level zu schaffen ist erst der Anfang. Jedes Level hat seine eigene Weltrekord-Tabelle: Hol jede Hundertstelsekunde heraus, lass deine Rivalen hinter dir und sichere dir Platz eins.</p>
   <ul class="feats" lang="tr">
+    <li>Üç dünya, 90 el yapımı bölüm: kanyon, tropik adalar ve çöl</li>
+    <li>Üç kahraman: Kai'nin katanası, Rohin'in kılıcı ve kalkanı, Velmor'un yıldırımları ve portalı</li>
+    <li>Baştan sona seslendirilmiş sinematikler, Türkçe dahil beş dilde</li>
+    <li>Ölümcül tuzaklar: testereler, alevler, çöken platformlar ve batan kum</li>
+    <li>Okçular, askerler, zombiler, büyücüler ve kumdan çıkan iskeletler</li>
     <li>Salise hassasiyetinde süre ve her bölüm için dünya rekor tablosu</li>
-    <li>Ölümcül tuzaklar ve pusudaki okçular — hepsini alt et</li>
-    <li>Katana dövüşü: kombo yap, düşmanı geri it, okları kılıcınla sektir</li>
-    <li>Kunai, uzun zıplama, görünmezlik ve ateş topu — altınla aç, yolunu kendin çiz</li>
-    <li>Yeni mod Ok Fırtınası: gökten yağan oklardan kaç, ne kadar dayanabildiğini göster</li>
-    <li>Gizli odalar ve saklı altınlar — dikkatli bakan kazanır</li>
+    <li>Ok Fırtınası modu, gizli odalar ve saklı altınlar</li>
   </ul>
   <ul class="feats" lang="en">
-    <li>Times to the hundredth of a second and a world record table for every level</li>
-    <li>Deadly traps and archers in ambush — beat them all</li>
-    <li>Katana combat: chain combos, knock enemies back, deflect arrows with your blade</li>
-    <li>Kunai, long jump, invisibility and fireball — unlock them with gold and play your way</li>
-    <li>New mode Arrow Storm: dodge arrows raining from the sky and see how long you last</li>
-    <li>Hidden rooms and secret gold for those who look closely</li>
+    <li>Three worlds, 90 handcrafted levels: the canyon, tropical islands and the desert</li>
+    <li>Three heroes: Kai's katana, Rohin's sword and shield, Velmor's lightning and portals</li>
+    <li>Fully voiced cinematics in five languages</li>
+    <li>Deadly traps: saw blades, flames, crumbling platforms and quicksand</li>
+    <li>Archers, soldiers, zombies, wizards and skeletons rising from the sand</li>
+    <li>Timing to the hundredth of a second and a world record table for every level</li>
+    <li>Arrow Storm mode, secret rooms and hidden gold</li>
   </ul>
   <ul class="feats" lang="es">
+    <li>Tres mundos, 90 niveles hechos a mano: el cañón, las islas tropicales y el desierto</li>
+    <li>Tres héroes: la katana de Kai, la espada y el escudo de Rohin, los rayos y portales de Velmor</li>
+    <li>Cinemáticas con voces en cinco idiomas, incluido el español</li>
+    <li>Trampas mortales: sierras, llamas, plataformas que se derrumban y arenas movedizas</li>
+    <li>Arqueros, soldados, zombis, magos y esqueletos que salen de la arena</li>
     <li>Tiempos al centésimo de segundo y una tabla de récords mundiales en cada nivel</li>
-    <li>Trampas mortales y arqueros al acecho: supéralos a todos</li>
-    <li>Combate con katana: encadena combos, empuja a los enemigos y corta las flechas con tu espada</li>
-    <li>Kunai, salto largo, invisibilidad y bola de fuego: desbloquéalos con oro y juega a tu manera</li>
-    <li>Nuevo modo Tormenta de Flechas: esquiva las flechas que caen del cielo y demuestra cuánto resistes</li>
-    <li>Salas secretas y oro escondido para quienes miran con atención</li>
+    <li>Modo Tormenta de Flechas, salas secretas y oro escondido</li>
   </ul>
   <ul class="feats" lang="pt">
-    <li>Tempo cravado em centésimos de segundo e uma tabela de recordes mundiais para cada fase</li>
-    <li>Armadilhas mortais e arqueiros à espreita — vença todos</li>
-    <li>Combate com katana: encadeie combos, empurre os inimigos, corte flechas com a lâmina</li>
-    <li>Kunai, salto longo, invisibilidade e bola de fogo — desbloqueie com ouro e jogue do seu jeito</li>
-    <li>Novo modo Chuva de Flechas: desvie das flechas que caem do céu e veja quanto tempo você aguenta</li>
-    <li>Salas secretas e ouro escondido para quem presta atenção</li>
+    <li>Três mundos, 90 fases feitas à mão: o cânion, as ilhas tropicais e o deserto</li>
+    <li>Três heróis: a katana de Kai, a espada e o escudo de Rohin, os raios e portais de Velmor</li>
+    <li>Cinemáticas dubladas em cinco idiomas, inclusive em português</li>
+    <li>Armadilhas mortais: serras, chamas, plataformas que desabam e areia movediça</li>
+    <li>Arqueiros, soldados, zumbis, magos e esqueletos que saem da areia</li>
+    <li>Tempo ao centésimo de segundo e uma tabela de recordes mundiais em cada fase</li>
+    <li>Modo Chuva de Flechas, salas secretas e ouro escondido</li>
   </ul>
   <ul class="feats" lang="de">
-    <li>Zeiten auf die Hundertstelsekunde und eine Weltrekord-Tabelle für jedes Level</li>
-    <li>Tödliche Fallen und Bogenschützen im Hinterhalt – überwinde sie alle</li>
-    <li>Katana-Kampf: Combos verketten, Gegner zurückstoßen, Pfeile mit der Klinge parieren</li>
-    <li>Kunai, Weitsprung, Unsichtbarkeit und Feuerball – schalte sie mit Gold frei und spiel auf deine Art</li>
-    <li>Neuer Modus Pfeilsturm: Weich den Pfeilen vom Himmel aus und zeig, wie lange du durchhältst</li>
-    <li>Geheimräume und verstecktes Gold für alle, die genau hinsehen</li>
+    <li>Drei Welten, 90 handgemachte Level: die Schlucht, die tropischen Inseln und die Wüste</li>
+    <li>Drei Helden: Kais Katana, Rohins Schwert und Schild, Velmors Blitze und Portale</li>
+    <li>Komplett vertonte Zwischensequenzen in fünf Sprachen, auch auf Deutsch</li>
+    <li>Tödliche Fallen: Sägen, Flammen, einstürzende Plattformen und Treibsand</li>
+    <li>Bogenschützen, Soldaten, Zombies, Magier und Skelette, die aus dem Sand steigen</li>
+    <li>Zeitmessung auf die Hundertstelsekunde und eine Weltrekord-Tabelle für jedes Level</li>
+    <li>Modus Pfeilsturm, Geheimräume und verstecktes Gold</li>
   </ul>
 </section>
 
 <section class="shots" aria-labelledby="shots-h">
-  <h2 id="shots-h"><span lang="tr">Kanyondan kareler</span><span lang="en">Inside the canyon</span><span lang="es">Dentro del cañón</span><span lang="pt">Por dentro do cânion</span><span lang="de">Einblicke in die Schlucht</span></h2>
+  <h2 id="shots-h"><span lang="tr">Oyundan kareler</span><span lang="en">Inside the game</span><span lang="es">Dentro del juego</span><span lang="pt">Por dentro do jogo</span><span lang="de">Einblicke ins Spiel</span></h2>
   <div class="shot-grid">
-    <img class="shot-main" lang="tr" src="{{ '/assets/img/menu-tr.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Kayıp Madalyon ana menüsü">
-    <img class="shot-main" lang="en" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Kai: Medallion Chase main menu">
-    <img class="shot-main" lang="es" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Menú principal de Kai: Medallion Chase">
-    <img class="shot-main" lang="pt" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Menu principal de Kai: Medallion Chase">
-    <img class="shot-main" lang="de" src="{{ '/assets/img/menu-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="Hauptmenü von Kai: Medallion Chase">
-    <img src="{{ '/assets/img/ekran-1.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kai testerelerin üstünden zıplıyor / Kai jumping over spinning saws">
-    <img src="{{ '/assets/img/ekran-2.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Ok Fırtınası modu: gökten yağan oklar / Arrow Storm mode: arrows raining from the sky">
-    <img src="{{ '/assets/img/ekran-3.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Kaya içinde gizli oda ve altınlar / A hidden room with gold inside the rock">
-    <img src="{{ '/assets/img/ekran-4.webp' | relative_url }}" width="1280" height="592" loading="lazy" alt="Katanayla askere saldırı / Striking a soldier with the katana">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-1.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="ZOR AMA ADİL — Testereler, dikenler, oklar… Hepsini aş!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-2.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="SESLİ HİKAYE — Sinematikler tamamen Türkçe seslendirildi!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-3.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="ROHİN'LE OYNA — Kendi kılıcı, kendi yetenekleri!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-4.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="VELMOR'UN BÜYÜSÜ — Yıldırım çağır, düşmanı savur!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-5.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="KATANAYLA SAVAŞ — Kombo yap, düşmanı geri it!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-6.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="NİNJA YETENEKLERİ — Ateş topu at, gölgeye karış!">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-7.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="ÜÇ DÜNYA, 90 BÖLÜM — Her bölüm elle tasarlandı.">
+    <img lang="tr" src="{{ '/assets/img/oyun-tr-8.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="OK FIRTINASI — Oklar yağıyor. Kaç saniye dayanırsın?">
+    <img lang="en" src="{{ '/assets/img/oyun-en-1.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HARD BUT FAIR — Saws, spikes, arrows… Beat them all!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-2.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="A VOICED STORY — Fully voiced cinematics!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-3.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="PLAY AS ROHIN — His own sword, his own skills!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-4.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="VELMOR'S MAGIC — Call down lightning, hurl your foes!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-5.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="MASTER THE KATANA — Chain combos, knock enemies back!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-6.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="NINJA SKILLS — Hurl fire, vanish into the shadows!">
+    <img lang="en" src="{{ '/assets/img/oyun-en-7.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="3 WORLDS, 90 LEVELS — Every level handcrafted.">
+    <img lang="en" src="{{ '/assets/img/oyun-en-8.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="ARROW STORM — Arrows are falling. How long can you last?">
+    <img lang="es" src="{{ '/assets/img/oyun-es-1.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="DIFÍCIL, PERO JUSTO — Sierras, púas, flechas… ¡Supéralas todas!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-2.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HISTORIA DOBLADA — ¡Cinemáticas dobladas al español!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-3.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="JUEGA CON ROHIN — ¡Con su propia espada y habilidades!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-4.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="LA MAGIA DE VELMOR — ¡Invoca rayos y lanza a tus enemigos!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-5.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="DOMINA LA KATANA — ¡Encadena combos y empuja al enemigo!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-6.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HABILIDADES NINJA — ¡Lanza fuego y desaparece en las sombras!">
+    <img lang="es" src="{{ '/assets/img/oyun-es-7.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="3 MUNDOS, 90 NIVELES — Cada nivel, hecho a mano.">
+    <img lang="es" src="{{ '/assets/img/oyun-es-8.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="TORMENTA DE FLECHAS — Llueven flechas. ¿Cuánto aguantas?">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-1.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="DIFÍCIL, MAS JUSTO — Serras, espinhos, flechas… Supere tudo!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-2.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HISTÓRIA DUBLADA — Cinemáticas dubladas em português!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-3.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="JOGUE COM ROHIN — Espada própria, habilidades próprias!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-4.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="A MAGIA DE VELMOR — Invoque raios e arremesse inimigos!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-5.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="DOMINE A KATANA — Faça combos e empurre os inimigos!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-6.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HABILIDADES NINJA — Lance fogo, suma nas sombras!">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-7.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="3 MUNDOS, 90 FASES — Cada fase feita à mão.">
+    <img lang="pt" src="{{ '/assets/img/oyun-pt-8.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="CHUVA DE FLECHAS — Chovem flechas. Quanto você aguenta?">
+    <img lang="de" src="{{ '/assets/img/oyun-de-1.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="HART, ABER FAIR — Sägen, Stacheln, Pfeile… Überwinde sie alle!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-2.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="VERTONTE STORY — Zwischensequenzen komplett auf Deutsch!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-3.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="SPIELE ALS ROHIN — Eigenes Schwert, eigene Fähigkeiten!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-4.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="VELMORS MAGIE — Ruf Blitze herab, schleudere Gegner davon!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-5.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="MEISTERE DAS KATANA — Combos schlagen, Gegner zurückstoßen!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-6.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="NINJA-FÄHIGKEITEN — Schleudere Feuer, tauch in die Schatten ab!">
+    <img lang="de" src="{{ '/assets/img/oyun-de-7.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="3 WELTEN, 90 LEVEL — Jedes Level von Hand gebaut.">
+    <img lang="de" src="{{ '/assets/img/oyun-de-8.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="PFEILSTURM — Es regnet Pfeile. Wie lange hältst du durch?">
   </div>
 </section>
 
 <section class="card faq">
   <h2><span lang="tr">Sık sorulanlar</span><span lang="en">FAQ</span><span lang="es">Preguntas frecuentes</span><span lang="pt">Perguntas frequentes</span><span lang="de">Häufige Fragen</span></h2>
   <div lang="tr">
+    <details><summary>Kaç bölüm var?</summary><p>90 bölüm: Kanyon, Tropikal ve Çöl'de 30'ar bölüm. Hepsi ücretsiz.</p></details>
+    <details><summary>Tropikal ve Çöl neden ayrıca iniyor?</summary><p>Oyunun indirme boyutu küçük kalsın diye bu iki dünya ayrı paket olarak geliyor. Bir dünyaya ilk girdiğinde internetten iner, o an bağlantı gerekir.</p></details>
     <details><summary>Oyun ücretsiz mi?</summary><p>Evet. Kai'yi indirmek ve tüm bölümleri oynamak ücretsiz. Oyundaki tek gerçek parayla satın alma "Reklamları Kaldır".</p></details>
     <details><summary>"Reklamları Kaldır" ne sağlar?</summary><p>Tek seferlik bir satın alma. Tüm reklamlar kalkar, oyunu internet olmadan da oynarsın ve MAĞAZA'dan her gün 2 eşyayı reklam izlemeden ücretsiz alırsın.</p></details>
     <details><summary>Oyunu silip yeniden yükledim ya da telefon değiştirdim. Satın alımım ne olacak?</summary><p>Satın alırken kullandığın Google ya da Apple hesabıyla giriş yaptığında "Reklamları Kaldır" geri gelir. Gelmezse MAĞAZA'daki "Satın alımları geri yükle" düğmesine dokun.</p></details>
@@ -131,6 +177,8 @@ body_class: home
     <details><summary>Hangi dillerde?</summary><p>Türkçe, İngilizce, İspanyolca, Portekizce (Brezilya) ve Almanca.</p></details>
   </div>
   <div lang="en">
+    <details><summary>How many levels are there?</summary><p>90 levels: 30 each in the Canyon, Tropical and Desert worlds. All of them free.</p></details>
+    <details><summary>Why do Tropical and Desert download separately?</summary><p>To keep the game's download small, these two worlds come as separate packs. Each one downloads the first time you enter it, so you need a connection at that moment.</p></details>
     <details><summary>Is the game free?</summary><p>Yes. Downloading Kai and playing every level is free. The only real-money purchase in the game is "Remove Ads".</p></details>
     <details><summary>What does "Remove Ads" do?</summary><p>It's a one-time purchase. All ads are gone, you can play without an internet connection, and you get 2 free items a day from the SHOP without watching an ad.</p></details>
     <details><summary>I reinstalled the game or switched phones. What happens to my purchase?</summary><p>Sign in with the same Google or Apple account you bought it with and "Remove Ads" comes back. If it doesn't, tap "Restore purchases" in the SHOP.</p></details>
@@ -139,6 +187,8 @@ body_class: home
     <details><summary>Which languages is it in?</summary><p>Turkish, English, Spanish, Portuguese (Brazil) and German.</p></details>
   </div>
   <div lang="es">
+    <details><summary>¿Cuántos niveles hay?</summary><p>90 niveles: 30 en cada mundo (Cañón, Tropical y Desierto). Todos gratis.</p></details>
+    <details><summary>¿Por qué Tropical y Desierto se descargan aparte?</summary><p>Para que el juego pese poco, estos dos mundos vienen en paquetes aparte. Cada uno se descarga la primera vez que entras en él, así que en ese momento necesitas conexión.</p></details>
     <details><summary>¿El juego es gratis?</summary><p>Sí. Descargar Kai y jugar todos los niveles es gratis. La única compra con dinero real del juego es "Sin anuncios".</p></details>
     <details><summary>¿Qué incluye "Sin anuncios"?</summary><p>Es una compra única. Se eliminan todos los anuncios, puedes jugar sin conexión a internet y cada día obtienes 2 objetos gratis en la TIENDA sin ver anuncios.</p></details>
     <details><summary>Reinstalé el juego o cambié de teléfono. ¿Qué pasa con mi compra?</summary><p>Inicia sesión con la misma cuenta de Google o Apple con la que hiciste la compra y "Sin anuncios" volverá. Si no vuelve, toca "Restaurar compras" en la TIENDA.</p></details>
@@ -147,6 +197,8 @@ body_class: home
     <details><summary>¿En qué idiomas está disponible?</summary><p>Turco, inglés, español, portugués (Brasil) y alemán.</p></details>
   </div>
   <div lang="pt">
+    <details><summary>Quantas fases existem?</summary><p>90 fases: 30 em cada mundo (Cânion, Tropical e Deserto). Todas grátis.</p></details>
+    <details><summary>Por que Tropical e Deserto são baixados à parte?</summary><p>Para o jogo ficar leve, esses dois mundos vêm em pacotes separados. Cada um é baixado na primeira vez que você entra nele, então nessa hora é preciso ter internet.</p></details>
     <details><summary>O jogo é grátis?</summary><p>Sim. Baixar o Kai e jogar todas as fases é grátis. A única compra com dinheiro real no jogo é "Remover Anúncios".</p></details>
     <details><summary>O que o "Remover Anúncios" oferece?</summary><p>É uma compra única. Todos os anúncios somem, você pode jogar sem internet e ganha 2 itens grátis por dia na LOJA sem assistir a anúncios.</p></details>
     <details><summary>Reinstalei o jogo ou troquei de celular. E a minha compra?</summary><p>Entre com a mesma conta Google ou Apple usada na compra e o "Remover Anúncios" volta. Se não voltar, toque em "Restaurar compras" na LOJA.</p></details>
@@ -155,6 +207,8 @@ body_class: home
     <details><summary>Em quais idiomas o jogo está disponível?</summary><p>Turco, inglês, espanhol, português (Brasil) e alemão.</p></details>
   </div>
   <div lang="de">
+    <details><summary>Wie viele Level gibt es?</summary><p>90 Level: je 30 in den Welten Schlucht, Tropen und Wüste. Alle kostenlos.</p></details>
+    <details><summary>Warum werden Tropen und Wüste separat geladen?</summary><p>Damit der Download klein bleibt, kommen diese beiden Welten als eigene Pakete. Jede wird beim ersten Betreten geladen – dafür brauchst du in dem Moment eine Internetverbindung.</p></details>
     <details><summary>Ist das Spiel kostenlos?</summary><p>Ja. Kai herunterzuladen und alle Level zu spielen ist kostenlos. Der einzige Echtgeld-Kauf im Spiel ist „Werbung entfernen“.</p></details>
     <details><summary>Was bringt „Werbung entfernen“?</summary><p>Es ist ein einmaliger Kauf. Alle Werbung verschwindet, du kannst ohne Internet spielen und bekommst im SHOP jeden Tag 2 Gegenstände gratis, ohne Werbung anzusehen.</p></details>
     <details><summary>Ich habe das Spiel neu installiert oder das Handy gewechselt. Was passiert mit meinem Kauf?</summary><p>Melde dich mit demselben Google- oder Apple-Konto an, mit dem du gekauft hast, und „Werbung entfernen“ ist wieder da. Falls nicht, tippe im SHOP auf „Käufe wiederherstellen“.</p></details>

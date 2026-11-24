@@ -50,6 +50,8 @@ main{max-width:1080px;margin:0 auto;padding:0 16px}
 .logo img{width:100%;max-width:520px;margin:0 auto}
 .tagline{font-size:1.2rem;font-weight:700;text-align:center;margin:.4em auto 1.2em;max-width:34em}
 .hero-art img{width:100%;max-width:440px;margin:0 auto;border-radius:20px;border:3px solid var(--kontur);box-shadow:0 0 0 2px var(--altin),0 18px 40px rgba(0,0,0,.45)}
+.hero-banner img{max-width:none;width:100%;aspect-ratio:auto;border-radius:22px}
+.hero-banner picture{display:block}
 
 .stores{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .store{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex:1 1 0;min-width:0;max-width:210px;min-height:64px;padding:8px 10px;
@@ -103,7 +105,7 @@ a.store:hover{filter:brightness(1.05);color:var(--cta-yazi)}
 .jump a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;font-weight:800}
 
 @media (min-width:800px){
-  .hero{grid-template-columns:1.1fr .9fr;gap:32px;padding:24px 0 48px}
+  .hero{gap:20px;padding:24px 0 48px}
   .tagline{font-size:1.3rem}
   .shot-grid{grid-template-columns:1fr 1fr;gap:16px}
   .card{padding:32px 36px}
