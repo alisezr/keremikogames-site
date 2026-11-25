@@ -118,6 +118,36 @@ body_class: home
   </ul>
 </section>
 
+<section class="trailer" aria-labelledby="trailer-h">
+  <h2 id="trailer-h"><span lang="tr">Fragman</span><span lang="en">Trailer</span><span lang="es">Tráiler</span><span lang="pt">Trailer</span><span lang="de">Trailer</span></h2>
+  <button class="yt" type="button" lang="tr" data-yt="Uo4n-27rBzo" aria-label="Fragmanı oynat (YouTube)">
+    <img src="{{ '/assets/img/fragman-tr.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+  <button class="yt" type="button" lang="en" data-yt="h6QVqmlkdUw" aria-label="Play the trailer (YouTube)">
+    <img src="{{ '/assets/img/fragman-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+  <button class="yt" type="button" lang="es" data-yt="h6QVqmlkdUw" aria-label="Reproducir el tráiler (YouTube)">
+    <img src="{{ '/assets/img/fragman-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+  <button class="yt" type="button" lang="pt" data-yt="h6QVqmlkdUw" aria-label="Assistir ao trailer (YouTube)">
+    <img src="{{ '/assets/img/fragman-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+  <button class="yt" type="button" lang="de" data-yt="h6QVqmlkdUw" aria-label="Trailer abspielen (YouTube)">
+    <img src="{{ '/assets/img/fragman-en.webp' | relative_url }}" width="1280" height="720" loading="lazy" alt="">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+</section>
+<script>
+(function(){var b=document.querySelectorAll('.yt[data-yt]');for(var i=0;i<b.length;i++){b[i].addEventListener('click',function(){
+var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+this.getAttribute('data-yt')+'?autoplay=1&rel=0';
+f.title=this.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
+f.setAttribute('lang',this.getAttribute('lang'));f.className='yt yt-on';this.parentNode.replaceChild(f,this);});}})();
+</script>
+
 <section class="shots" aria-labelledby="shots-h">
   <h2 id="shots-h"><span lang="tr">Oyundan kareler</span><span lang="en">Inside the game</span><span lang="es">Dentro del juego</span><span lang="pt">Por dentro do jogo</span><span lang="de">Einblicke ins Spiel</span></h2>
   <div class="shot-grid">
